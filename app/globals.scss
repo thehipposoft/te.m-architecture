@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+p, a, button {
+  font-family: $montserrat-light;
+  color: #111111;
+}
+
+button {
+  appearance: none;
+}
+
+.regular, span, h3, h4, input, textarea {
+  font-family: $montserrat-regular;
+}
+
+h1, h2, h3, h4 ,h5 {
+  margin: 0;
+}
+
+.bold {
+  font-family: $montserrat-bold;
+}
+
+.light {
+  font-family: $montserrat-light;
+}
+
+h1, h2 {
+  font-family: $montserrat-bold;
+}
+

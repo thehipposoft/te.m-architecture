@@ -1,0 +1,28 @@
+//Colors
+
+//Fonts
+$montserrat-regular: 'Montserrat Regular';
+$montserrat-bold: 'Montserrat Bold';
+$montserrat-light: 'Montserrat Light';
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/Montserrat-Light.ttf');
+}
+  
