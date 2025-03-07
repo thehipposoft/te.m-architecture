@@ -3,15 +3,16 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const initialValues = {
-    interest: [],
+    interest: '',
     name: '',
+    phoneNumber: 0,
     customerEmail: '',
     message: '',
 };
 
 type FieldsType = {
-    name: 'interest' | 'name' | 'customerEmail' | 'message';
-    type: 'text' | 'textArea' | 'select' | 'email';
+    name: 'interest' | 'name' | 'customerEmail' | 'message' | 'phoneNumber' ;
+    type: 'text' | 'textArea' | 'select' | 'email' | 'tel';
     label: string;
     placeholder: string;
     required?: boolean;
@@ -26,8 +27,9 @@ type MyCustomFormProps = {
 };
 
 type FormValues = {
-    interest: string[];
+    interest: string;
     name: string;
+    phoneNumber: number;
     customerEmail: string;
     message: string;
 };
@@ -43,8 +45,9 @@ const MyCustomForm = ({
     const [isAPILoading, setIsAPILoading] = useState<boolean>(false);
     const [messageDescription, setMessageDescription] = useState<string>('');
     const [values, setValues] = useState<FormValues>({
-        interest: [],
+        interest: '',
         name: '',
+        phoneNumber: 0,
         customerEmail: '',
         message: '',
     });
@@ -76,23 +79,6 @@ const MyCustomForm = ({
         });
     };
 
-    const handleChangeBoxes = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const isChecked = e.target.checked;
-        if (isChecked) {
-            setValues({
-                ...values,
-                interest: [...values.interest, e.target.value]
-            })
-        } else {
-            const index = values.interest.indexOf(e.target.value);
-            values.interest.splice(index, 1);
-            setValues({
-                ...values,
-                interest: values.interest
-            })
-        }
-    }
-
     const handleSubmit = (event:any) => {
         if (event) event.preventDefault();
 
@@ -103,6 +89,7 @@ const MyCustomForm = ({
                 interest: values.interest,
                 message: values.message,
                 name: values.name,
+                phoneNumber: values.phoneNumber,
                 customerEmail: values.customerEmail,
             },
             {
@@ -142,9 +129,9 @@ const MyCustomForm = ({
                                         name={name}
                                         id={name}
                                         value={values[name]}
-                                        rows={2}
+                                        rows={8}
                                         cols={40}
-                                        className='resize-none py-3 px-8  bg-[#f3f3f3]  border-black w-full focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'
+                                        className='resize-none py-3 px-8  bg-[#f3f3f3] border-none  border-black w-full focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'
                                         placeholder={placeholder}
                                         onChange={handleChange}
                                         required={field.required}
@@ -159,7 +146,7 @@ const MyCustomForm = ({
                                         type={type}
                                         name={name}
                                         id={name}
-                                        className={'py-3 px-8 w-full bg-[#f3f3f3] focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
+                                        className={'py-3 px-8 w-full bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
                                         onChange={handleChange}
                                         value={values[name]}
                                         placeholder={placeholder}
@@ -175,7 +162,7 @@ const MyCustomForm = ({
                 disabled={isAPILoading}
                 value={submitButtonLabel ? submitButtonLabel : 'Send'}
                 type="submit"
-                className={` ${isAPILoading ? 'opacity-50' : ''} mt-20 light tracking-widest text-xs flex items-center px-8 gap-4 py-6 bg-[#f3f3f3] duration-300  `}
+                className={` ${isAPILoading ? 'opacity-50' : ''} border-none mt-20 light tracking-widest text-xs flex items-center px-8 gap-4 py-6 bg-[#f3f3f3] duration-300  `}
             >
                 {submitButtonLabel}
                 <svg width="18" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M0 4.5A.5.5 0 0 1 .5 4h16a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5Z" fill="#333"/><path fillRule="evenodd" clipRule="evenodd" d="M12.646.646a.5.5 0 0 1 .708 0L17.207 4.5l-3.853 3.853a.5.5 0 0 1-.708-.707L15.793 4.5l-3.147-3.147a.5.5 0 0 1 0-.707Z" fill="#333"/></svg>

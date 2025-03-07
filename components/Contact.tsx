@@ -19,10 +19,24 @@ const Contact = () => {
                       required: true,
                   },
                   {
+                      name: 'phoneNumber',
+                      type: 'tel',
+                      label: '',
+                      placeholder: 'Phone Number*',
+                      required: true,
+                  },
+                  {
                       name: 'customerEmail',
                       type: 'email',
                       label: '',
                       placeholder: 'Email*',
+                      required: true,
+                  },
+                  {
+                      name: 'interest',
+                      type: 'text',
+                      label: '',
+                      placeholder: 'Interested In',
                       required: true,
                   },
                   {

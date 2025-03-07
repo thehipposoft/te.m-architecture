@@ -14,8 +14,8 @@ const About = () => {
                   <Image src={'/assets/images/about/about-3.png'} alt='' width={270} height={345} className='pt-6' />
               </div>
               <div className='w-1/3 flex flex-col'>
-                  <p className='text-6xl text-[#DDDDDD] '>About</p>
-                  <p className='pt-4'>We are Mica and Flor, lifelong friends united by a shared passion: design and architecture. We studied together at the National University of Córdoba, Argentina, and since then, we have shared the desire to create spaces that truly adapt to the people who inhabit them ....Read more</p>
+                  <p className='text-6xl text-[#DDDDDD] m-0'>About</p>
+                  <p className='pt-4 m-0'>We are Mica and Flor, lifelong friends united by a shared passion: design and architecture. We studied together at the National University of Córdoba, Argentina, and since then, we have shared the desire to create spaces that truly adapt to the people who inhabit them ....Read more</p>
               </div>
           </div>
       </div>

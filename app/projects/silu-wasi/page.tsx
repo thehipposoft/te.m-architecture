@@ -1,10 +1,44 @@
 import ProjectLayout from '@/components/ProjectLayout'
 import React from 'react'
+import Image from 'next/image'
 
 function SiluWasiPage () {
 
   const PROJECT_DATA = {
-    mainImage: '/assets/images/projects/silu-wasi/01.webp',
+    gallery: [
+      {
+        src: '/assets/images/projects/silu-wasi/1-fw.webp',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/2.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/3.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/4.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/5.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/6.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/7.jpg',
+        alt: ''
+      },
+      {
+        src: '/assets/images/projects/silu-wasi/8.jpg',
+        alt: ''
+      },
+    ],
     projectName: 'hotel boutique silu wasi',
     typology: 'Hospitalty',
     location: 'Salta, Argentina',
@@ -12,16 +46,21 @@ function SiluWasiPage () {
     status: 'In Progress',
     size: '1050 M2',
     designTeam: 'TE.M STUDIO',
-    secondImage: '/assets/images/projects/silu-wasi/01.webp',
+    banner: '/assets/images/projects/silu-wasi/4.jpg',
+    bannerW: 2048,
+    bannerH: 1152,
+    secondImage: '/assets/images/projects/croquis.png',
     name: 'Silo Wasi',
-    shortDescription: 'A boutique retreat where accessibility<br/> meets nature',
-    text: 'Silu Wasi is more than just a hotel—it’s a space designed to be inclusive, sustainable, and deeply connected to its surroundings. Built with locally sourced materials and a minimal environmental footprint, it blends seamlessly into the landscape. Accessibility was a priority from the very beginning, ensuring that every guest, including wheelchair users, can experience comfort and relaxation without limitations. Here, architecture is not just about form; it’s about creating spaces that welcome everyone.'
+    shortDescription: 'A boutique retreat where accessibility meets nature',
+    text: 'Silu Wasi is more than just a hotel—it’s a space designed to be inclusive, sustainable, and deeply connected to its surroundings. Built with locally sourced materials and a minimal environmental footprint, it blends seamlessly into the landscape. Accessibility was a priority from the very beginning, ensuring that every guest, including wheelchair users, can experience comfort and relaxation without limitations. Here, architecture is not just about form; it’s about creating spaces that welcome everyone.',
+    BIMtitle: 'Harnessing BIM for terrain adaptation and structural efficiency',
+    BIMtext: 'While the project wasn’t initially developed in BIM, the technology played a crucial role in resolving key technical challenges. BIM modeling allowed for precise analysis of the site’s natural slopes, optimizing the building’s placement to minimize excavation and environmental disruption. It also facilitated the integration of adobe construction, ensuring structural integrity while maintaining traditional craftsmanship. By leveraging BIM, we achieved a design that is both sustainable and seamlessly adapted to its unique context.',
   }
 
   return (
     <div>
         <ProjectLayout 
-          mainImage={PROJECT_DATA.mainImage} 
+          gallery={PROJECT_DATA.gallery} 
           projectName={PROJECT_DATA.projectName} 
           typology={PROJECT_DATA.typology}
           location={PROJECT_DATA.location}
@@ -29,10 +68,18 @@ function SiluWasiPage () {
           status={PROJECT_DATA.status}
           size={PROJECT_DATA.size}
           designTeam={PROJECT_DATA.designTeam}
+          banner={PROJECT_DATA.banner}
+          bannerW={PROJECT_DATA.bannerW}
+          bannerH={PROJECT_DATA.bannerH}
           secondImage={PROJECT_DATA.secondImage}
           name={PROJECT_DATA.name}
           shortDescription={PROJECT_DATA.shortDescription}
           text={PROJECT_DATA.text}
+          BIMtitle={PROJECT_DATA.BIMtitle}
+          BIMtext={PROJECT_DATA.BIMtext}
+          BIMimage={
+            <Image src={'/assets/images/projects/casa-patio/bim.jpg'} alt='' width={2857} height={1320} className='w-[645px] h-[400px]' />
+          }
         />
     </div>
   )

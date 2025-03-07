@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 p, a, button {
   font-family: $montserrat-light;
   color: #111111;
@@ -26,6 +30,7 @@ button {
 
 h1, h2, h3, h4 ,h5 {
   margin: 0;
+  font-weight: inherit;
 }
 
 .bold {
@@ -40,3 +45,14 @@ h1, h2 {
   font-family: $montserrat-bold;
 }
 
+.roboto {
+  font-family: $roboto-medium;
+}
+
+.roboto-light {
+  font-family: $roboto-light;
+}
+
+.bottom-border {
+  border-bottom: solid 1px #DDDDDD;
+}

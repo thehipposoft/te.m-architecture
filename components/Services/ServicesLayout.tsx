@@ -2,25 +2,25 @@ import Image from 'next/image'
 import React from 'react'
 
 type ServicesLayoutDataType = {
-    imageOne: string,
-    imageTwo: string,
+    imageOne: any,
+    imageTwo: any,
     title: string,
     text: any,
-    imageThree: string,
+    endImageLayout: any,
 }
 
-const ServicesLayout = ({imageOne, imageTwo, title, text, imageThree}:ServicesLayoutDataType) => {
+const ServicesLayout = ({imageOne, imageTwo, title, text, endImageLayout}:ServicesLayoutDataType) => {
   return (
     <div className='flex flex-col gap-4'>
-        <Image src={imageOne} alt='' width={1170} height={435} />
-        <div className='flex gap-4'>
-            <Image src={imageTwo} alt='' width={419} height={428} />
-            <div className='flex flex-col gap-2'>
+        {imageOne}
+        <div className='flex items-center gap-8'>
+            {imageTwo}
+            <div className='flex flex-col w-[685px]'>
                 <h1 className='bold text-xl uppercase'>{title}</h1>
                 {text}
             </div>
         </div>
-        <Image src={imageThree} alt='' width={1170} height={435} />
+        {endImageLayout}
     </div>
   )
 }

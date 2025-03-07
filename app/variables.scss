@@ -4,6 +4,9 @@
 $montserrat-regular: 'Montserrat Regular';
 $montserrat-bold: 'Montserrat Bold';
 $montserrat-light: 'Montserrat Light';
+$roboto-medium: "Roboto Medium";
+$roboto-light: "Roboto Light";
+
 
 @font-face {
   font-family: 'Montserrat Regular';
@@ -24,5 +27,19 @@ $montserrat-light: 'Montserrat Light';
     font-style: normal;
     font-weight: 300;
     src: url('/assets/fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/assets/fonts/Roboto-Light.ttf');
 }
   

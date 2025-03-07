@@ -1,20 +1,24 @@
 import ServicesLayout from '@/components/Services/ServicesLayout';
 import React from 'react';
+import Image from 'next/image';
 
 export default function ArchitecturePage() {
     return (
         <div>
             <ServicesLayout
-                imageOne='/assets/images/hero/hero-1.png'
-                imageTwo='/assets/images/hero/hero-1.png'
+                imageOne={<Image src={'/assets/images/services/architecture-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] object-cover' />}
+                imageTwo={<Image src={'/assets/images/services/architecture-2.jpg'} alt='' width={419} height={428} className='object-cover' />}
                 title='Architecture'
                 text={
                     <div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p className='roboto-light md:w-[640px]'>We develop architectural projects from concept to completion, adapting to each client’s needs. Whether it’s a new build, a renovation, or an extension, we design thoughtful and functional spaces that enhance daily life. Our services range from preliminary designs to fully detailed architectural projects. </p>                    </div>
+                }
+                endImageLayout={
+                    <div className='md:max-w-[1170px] flex justify-between'>
+                        <Image src={'/assets/images/services/architecture-3.jpg'} alt='' width={1374} height={700} className='w-[47%] h-[435px] object-contain' />
+                        <Image src={'/assets/images/services/architecture-4.jpg'} alt='' width={1419} height={635} className='w-[47%] h-[435px] object-contain' />
                     </div>
                 }
-                imageThree='/assets/images/hero/hero-1.png'
              />
         </div>
     );
