@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 type GalleryLayoutTypes = {
     title: string,
+    slug: string
 }
 
 const GalleryLayout = ({title}:GalleryLayoutTypes) => {

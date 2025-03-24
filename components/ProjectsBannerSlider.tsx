@@ -29,11 +29,11 @@ const handlePrev = () => {
 
   return (
     <div className='flex flex-col relative'>
-        <div className='w-screen md:h-[675px] relative flex items-end'>
+        <div className='md:w-screen w-[85vw] mx-auto md:mx-0 md:h-[675px] h-[70vh] relative flex items-end'>
             {
                 gallery.map((val:any, index:number) => (
                     <div key={index}>
-                        <Image src={val.src} alt='' fill className={`duration-500 ${currentIndex === index ? 'opacity-100' : 'opacity-0'} object-cover rounded-tr-[200px]`} />
+                        <Image src={val.src} alt='' fill className={`md:duration-1000 duration-500 ${currentIndex === index ? 'opacity-100' : 'opacity-0'} object-cover rounded-tr-3xl md:rounded-tr-[200px]`} />
                     </div>
                 ))
             }

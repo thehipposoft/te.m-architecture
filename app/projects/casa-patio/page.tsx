@@ -71,14 +71,16 @@ function SiluWasiPage () {
           banner={PROJECT_DATA.banner}
           bannerW={PROJECT_DATA.bannerW}
           bannerH={PROJECT_DATA.bannerH}
-          secondImage={PROJECT_DATA.secondImage}
+          secondImage={
+            <Image src={'/assets/images/projects/casa-patio/croquis.jpg'} alt='' width={1111} height={567} className='md:w-[746px] w-[85vw] md:h-[526px] h-[45vh] object-contain' />
+          }
           name={PROJECT_DATA.name}
           shortDescription={PROJECT_DATA.shortDescription}
           text={PROJECT_DATA.text}
           BIMtitle={PROJECT_DATA.BIMtitle}
           BIMtext={PROJECT_DATA.BIMtext}
           BIMimage={
-            <Image src={'/assets/images/projects/casa-patio/bim.jpg'} alt='' width={2857} height={1320} className='w-[645px] h-[400px]' />
+            <Image src={'/assets/images/projects/casa-patio/bim.jpg'} alt='' width={2857} height={1320} className='md:w-[645px] w-[85vw] object-contain h-[400px]' />
           }
         />
     </div>

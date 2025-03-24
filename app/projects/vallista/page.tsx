@@ -59,14 +59,16 @@ function SiluWasiPage () {
           banner={PROJECT_DATA.banner}
           bannerW={PROJECT_DATA.bannerW}
           bannerH={PROJECT_DATA.bannerH}
-          secondImage={PROJECT_DATA.secondImage}
+          secondImage={
+            <Image src={'/assets/images/projects/vallista/croquis.jpg'} alt='' width={3468} height={2876} className='md:w-[746px] w-[85vw] h-80 mx-auto md:h-[526px] object-contain' />
+          }
           name={PROJECT_DATA.name}
           shortDescription={PROJECT_DATA.shortDescription}
           text={PROJECT_DATA.text}
           BIMtitle={PROJECT_DATA.BIMtitle}
           BIMtext={PROJECT_DATA.BIMtext}
           BIMimage={
-            <Image src={'/assets/images/projects/vallista/bim.jpg'} alt='' width={5713} height={1700} className='w-[645px] h-[400px]' />
+            <Image src={'/assets/images/projects/vallista/bim.jpg'} alt='' width={5713} height={1700} className='w-[90vw] h-[400px] object-contain' />
           }
         />
     </div>

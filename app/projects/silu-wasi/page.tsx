@@ -49,7 +49,7 @@ function SiluWasiPage () {
     banner: '/assets/images/projects/silu-wasi/4.jpg',
     bannerW: 2048,
     bannerH: 1152,
-    secondImage: '/assets/images/projects/croquis.png',
+    secondImage: '/assets/images/projects/silu-wasi/croquis.jpg',
     name: 'Silo Wasi',
     shortDescription: 'A boutique retreat where accessibility meets nature',
     text: 'Silu Wasi is more than just a hotel—it’s a space designed to be inclusive, sustainable, and deeply connected to its surroundings. Built with locally sourced materials and a minimal environmental footprint, it blends seamlessly into the landscape. Accessibility was a priority from the very beginning, ensuring that every guest, including wheelchair users, can experience comfort and relaxation without limitations. Here, architecture is not just about form; it’s about creating spaces that welcome everyone.',
@@ -71,14 +71,16 @@ function SiluWasiPage () {
           banner={PROJECT_DATA.banner}
           bannerW={PROJECT_DATA.bannerW}
           bannerH={PROJECT_DATA.bannerH}
-          secondImage={PROJECT_DATA.secondImage}
+          secondImage={
+            <Image src={'/assets/images/projects/silu-wasi/croquis.jpg'} alt='' width={960} height={345} className='md:w-[746px] w-[85vw] md:h-[526px] object-contain' />
+          }
           name={PROJECT_DATA.name}
           shortDescription={PROJECT_DATA.shortDescription}
           text={PROJECT_DATA.text}
           BIMtitle={PROJECT_DATA.BIMtitle}
           BIMtext={PROJECT_DATA.BIMtext}
           BIMimage={
-            <Image src={'/assets/images/projects/casa-patio/bim.jpg'} alt='' width={2857} height={1320} className='w-[645px] h-[400px]' />
+            <Image src={'/assets/images/projects/silu-wasi/bim.png'} alt='' width={613} height={1559} className='md:w-[613px] md:h-[1104px] h-[65vh] w-[85vw] object-contain' />
           }
         />
     </div>

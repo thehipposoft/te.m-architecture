@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='h-[415px] bg-[#c4c4c4] flex items-center'>
+    <div className='md:h-[415px] hidden bg-[#c4c4c4] md:flex items-center'>
         <div className='flex justify-between md:w-[1100px] mx-auto gap-8'>
             <Image src={'/assets/images/logo-footer.png'} alt='' width={160} height={186} className='w-[160] h-[186px]' />
             <div className='flex flex-col gap-5'>

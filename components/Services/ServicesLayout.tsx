@@ -13,9 +13,9 @@ const ServicesLayout = ({imageOne, imageTwo, title, text, endImageLayout}:Servic
   return (
     <div className='flex flex-col gap-4'>
         {imageOne}
-        <div className='flex items-center gap-8'>
+        <div className='flex flex-col-reverse md:flex-row items-center md:gap-8 gap-4'>
             {imageTwo}
-            <div className='flex flex-col w-[685px]'>
+            <div className='flex flex-col md:w-[685px] w-[85vw] pt-12'>
                 <h1 className='bold text-xl uppercase'>{title}</h1>
                 {text}
             </div>

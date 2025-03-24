@@ -4,10 +4,10 @@ import { Form } from './Form'
 
 const Contact = () => {
   return (
-    <div className='h-screen flex justify-center items-center rounded-tr-[300px] relative '>
-      <Image src={'/assets/images/contact.png'} alt='' fill />
-      <div className='relative z-20 flex w-[1130px] mx-auto items-center justify-between'>
-        <p id='contact' className='md:text-6xl text-white'>Contact Us</p>
+    <div className='h-screen flex justify-center items-center rounded-tr-[300px] relative ' id='contact'>
+      <Image src={'/assets/images/contact.png'} alt='' fill className='object-cover md:object-fill' />
+      <div className='relative z-20 flex md:flex-row flex-col md:w-[1130px] mx-auto items-center justify-between'>
+        <p  className='md:text-6xl text-5xl text-white'>Contact Us</p>
         <div>
           <Form
               fields={[
