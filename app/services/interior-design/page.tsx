@@ -7,7 +7,7 @@ export default function InteriorDesignPage() {
         <div>
             <ServicesLayout
                 imageOne={<Image src={'/assets/images/services/interior-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] md:w-auto object-cover' />}
-                imageTwo={<Image src={'/assets/images/services/interior-2.jpg'} alt='' width={419} height={428} className='object-cover w-[85vw] md:w-auto' />}
+                imageTwo={<Image src={'/assets/images/services/interior-2.jpg'} alt='' width={419} height={428} className='object-cover w-[85vw] md:w-[419px]' />}
                 title='Interior Design'
                 text={
                     <div>

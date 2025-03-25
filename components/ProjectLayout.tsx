@@ -10,6 +10,7 @@ type GalleryType = {
 type ProjectLayoutTypes = {
     projectName: string,
     gallery: GalleryType[],
+    mobileGallery: any,
     typology: string,
     location: string,
     year: string,
@@ -30,6 +31,7 @@ type ProjectLayoutTypes = {
 
 const ProjectLayout = ({
     gallery,
+    mobileGallery,
     projectName,
     typology,
     location,
@@ -50,8 +52,11 @@ const ProjectLayout = ({
 }:ProjectLayoutTypes) => {
   return (
     <div className='flex flex-col pt-[25%] md:pt-0'>
-        <div>
+        <div className='hidden md:block'>
             <ProjectsBannerSlider gallery={gallery} />
+        </div>
+        <div className='md:hidden block mx-auto mt-8'>
+            {mobileGallery}
         </div>
         <div className='flex justify-end my-20 '>
             <div className='border-solid border-[#DDDDDD] rounded-tl-2xl md:rounded-tl-[55px] pt-4 md:w-[80vw] w-[85vw] mx-auto md:mx-0'>

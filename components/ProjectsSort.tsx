@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ProjectsSort = () => {
   return (
-    <div className='md:h-[500px] flex justify-center overflow-hidden relative w-[85vw] md:w-auto md:mx-0 mx-auto' id='projects'>
+    <div className='md:h-[500px] h-[700px] flex justify-center items-center md:items-start overflow-hidden relative w-[85vw] md:w-auto md:mx-0 mx-auto' id='projects'>
         <div className='bg-[#c4c4c4] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute left-0 -top-32'/>
         <div className='bg-[rgb(196,196,196)] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute right-0 -top-32'/>
         <div className='md:w-[1050px] md:pt-40 flex flex-col gap-4 relative z-[2]'>

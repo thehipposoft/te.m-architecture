@@ -1,4 +1,5 @@
 import ProjectLayout from '@/components/ProjectLayout'
+import GalleryCard from '@/components/Services/GalleryCard'
 import Image from 'next/image'
 import React from 'react'
 
@@ -61,6 +62,9 @@ function SiluWasiPage () {
     <div>
         <ProjectLayout 
           gallery={PROJECT_DATA.gallery} 
+          mobileGallery={
+            <GalleryCard gallery={PROJECT_DATA.gallery} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/1.jpg' imageAlt='asd' width='85vw' height='450px' expandColor='#FFFFFF' rounded  />
+          }
           projectName={PROJECT_DATA.projectName} 
           typology={PROJECT_DATA.typology}
           location={PROJECT_DATA.location}

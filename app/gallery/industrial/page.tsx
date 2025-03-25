@@ -28,7 +28,7 @@ function IndustrialGalleryPage () {
   return (
     <div className='flex flex-col md:w-[1170px] w-[85vw] mx-auto md:py-20 pt-[25%]'>
         <div className='flex flex-col gap-4 pb-12'>
-            <h1 className='text-[#DDDDDD] light md:text-[64px] leading-10'>Industrial Projects</h1>
+            <h1 className='text-[#DDDDDD] light md:text-[64px] md:leading-10 leading-[55px]'>Industrial Projects</h1>
             <h2 className='bolde text-[35px]'>Gallery</h2>
             <div className='w-full h-[1px] bg-[#DDDDDD]' />
         </div>
@@ -43,7 +43,9 @@ function IndustrialGalleryPage () {
           <GalleryCard gallery={VALLISTA} title='Fabrica de Cerveza Artesanal "Vallista"' titleColor='#FFFFFF' imageSrc='/assets/images/projects/vallista/5.jpg' imageAlt='asd' width='370px' height='255px' expandColor='#333333' rounded />
           </div>
         </div>
-        <GalleryCard gallery={VALLISTA} title='Fabrica de Cerveza Artesanal "Vallista"' titleColor='#FFFFFF' imageSrc='/assets/images/projects/vallista/1.jpg' imageAlt='asd' width='85vw' height='455px' expandColor='#FFFFFF' rounded />
+        <div className='md:hidden'>
+          <GalleryCard gallery={VALLISTA} title='Fabrica de Cerveza Artesanal "Vallista"' titleColor='#FFFFFF' imageSrc='/assets/images/projects/vallista/1.jpg' imageAlt='asd' width='85vw' height='455px' expandColor='#FFFFFF' rounded />
+        </div>
     </div>
   )
 }

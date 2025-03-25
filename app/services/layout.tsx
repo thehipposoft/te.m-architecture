@@ -5,7 +5,7 @@ const ServicesLayout = ({children}:Readonly<{
   }>) => {
   return (
     <div className=''>
-        <div className='flex flex-col md:w-[1170px] w-[85vw] mx-auto md:py-20 pt-[25%]'>
+        <div className='flex flex-col md:w-[1170px] w-[85vw] mx-auto md:py-12 pt-[25%]'>
             <div className='flex flex-col gap-2 pb-12'>
                 <h1 className='uppercase text-[#DDDDDD] light md:text-[64px] leading-10'>Our Services</h1>
                 <h2 className='bolde text-[35px]'>What we offer</h2>
