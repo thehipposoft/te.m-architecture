@@ -13,7 +13,7 @@ const About = () => {
 
   const container = useRef(null)
 
-  let mm = gsap.matchMedia();
+  const mm = gsap.matchMedia();
   
   useGSAP(() => {
     mm.add("(min-width: 1300px)", () => {
