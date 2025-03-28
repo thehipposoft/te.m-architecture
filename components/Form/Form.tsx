@@ -5,7 +5,7 @@ import axios from 'axios';
 const initialValues = {
     interest: '',
     name: '',
-    phoneNumber: 0,
+    phoneNumber: '',
     customerEmail: '',
     message: '',
 };

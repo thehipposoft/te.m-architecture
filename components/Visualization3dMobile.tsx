@@ -1,6 +1,6 @@
 import React from 'react'
 import GalleryCard from '@/components/Services/GalleryCard';
-import { AMPLIACION_TIPAL, ARMADALE_PROJECT, BLACKROCK_HOUSE, CASA_RAFITA, DM, DON_MARTIN } from '../app/services/3d-visualization/constants';
+import { AMPLIACION_TIPAL, ARMADALE_PROJECT, BLACKROCK_HOUSE, CASA_RAFITA, DM, DON_MARTIN, INSTITUTO_FRANKLIN, CARNEGIE_HOUSE } from '../app/services/3d-visualization/constants';
 
 const Visualization3dMobile = () => {
   return (
@@ -19,14 +19,20 @@ const Visualization3dMobile = () => {
             <h2 className='bolde text-[35px]'>Other projects</h2>
         </div>
         <div className='flex flex-col gap-8 mb-12'>
-            <div className='row-span-4 relative'>
+            <div className='relative'>
                 <GalleryCard gallery={CASA_RAFITA} title='Casa Rafita by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/casa-rafita/1.jpg' imageAlt='asd' width='85vw' height='420px' expandColor='#505050' rounded />
             </div>
-            <div className='row-span-3 relative'>
+            <div className='relative'>
                 <GalleryCard gallery={DM} title='DM by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/dm/1.jpg' imageAlt='asd' width='85vw' height='420px' expandColor='#FFFFFF' rounded />
             </div>
-            <div className='row-span-5 relative'>
+            <div className=' relative'>
                 <GalleryCard gallery={DON_MARTIN} title='Restaurante Don Martin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/don-martin/1.jpg' imageAlt='asd' width='85vw' height='420px' expandColor='#505050' rounded  />
+            </div>
+            <div className='relative'>
+                <GalleryCard gallery={INSTITUTO_FRANKLIN} title='Instituto Franklin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/instituto-franklin/1.jpg' imageAlt='asd' width='85vw' height='420px' expandColor='#FFFFFF' rounded />
+            </div>
+            <div className=' relative'>
+                <GalleryCard gallery={CARNEGIE_HOUSE} title='Carnegie House by JDALammin Architects' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/carnegie-house/1.jpg' imageAlt='asd' width='85vw' height='420px' expandColor='#505050' rounded  />
             </div>
         </div>
     </div>

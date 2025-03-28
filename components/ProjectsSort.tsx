@@ -1,11 +1,33 @@
-import React from 'react'
-import Link from 'next/link';
+'use client'
+import React, { useRef } from 'react'
+import Link from 'next/link'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
 
 const ProjectsSort = () => {
+
+  const container = useRef(null);
+
+  useGSAP(() => {
+    gsap.from('.layer', {
+      scrollTrigger: {
+        trigger: container.current,
+        start: 'end 45%',
+      },
+      opacity: 0,
+      scaleX: .2,
+      duration: 1.3,
+      ease: 'power3.out'
+    })
+  }, {scope: container})
+
   return (
-    <div className='md:h-[500px] h-[700px] flex justify-center items-center md:items-start overflow-hidden relative w-[85vw] md:w-auto md:mx-0 mx-auto' id='projects'>
-        <div className='bg-[#c4c4c4] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute left-0 -top-32'/>
-        <div className='bg-[rgb(196,196,196)] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute right-0 -top-32'/>
+    <div ref={container} className='md:h-[500px] h-[700px] flex justify-center items-center md:items-start overflow-hidden relative w-[85vw] md:w-auto md:mx-0 mx-auto' id='projects'>
+        <div className='layer bg-[#c4c4c4] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute left-0 -top-32'/>
+        <div className='layer bg-[#c4c4c4] opacity-20 w-[75vw] md:h-[800px] rounded-t-full absolute right-0 -top-32'/>
         <div className='md:w-[1050px] md:pt-40 flex flex-col gap-4 relative z-[2]'>
             <p className='regular text-4xl m-0'>Technical Expertise & Integrated Studio</p>
             <p className='text-xl m-0'>Every space has a purpose. We design with that in mind.</p>

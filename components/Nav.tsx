@@ -1,16 +1,29 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
 
 const Nav = () => {
 
     const currentPath = usePathname()
+    const container = useRef(null);
 
-    console.log('path:', currentPath)
+    useGSAP(() => {
+        gsap.from(container.current,
+            {
+                opacity: 0,
+                y: -100,
+                ease: 'power2.out',
+                duration: 1,
+             });
+    },{ scope: container });
 
   return (
-    <nav className='flex gap-8 font-light'>
+    <nav ref={container} className='flex gap-8 font-light'>
         <Link 
             href={'/#projects'}
             className={`uppercase px-2 text-xs relative tracking-widest h-fit overflow-hidden

@@ -19,7 +19,7 @@ const AboutPageComponent = () => {
                     <div className='w-[1px] h-12 absolute left-0 bottom-0 bg-[#E5E5E5]'/>
                     <div className='w-52 h-[1px] absolute left-0 bottom-0 bg-[#E5E5E5]'/>
                 </div>
-                <Image src={'/assets/images/logo.png'} alt='' width={275} height={280} className='w-[170px] h-[181px]' />
+                <Image src={'/assets/images/logo.png'} alt='' width={160} height={186} className='md:w-[85px] w-[65px] md:h-[95px] h-[75px]' />
                 <div className=' hidden md:block w-52 h-12 relative'>
                     <div className='w-[1px] h-12 absolute right-0 bg-[#E5E5E5]'/>
                     <div className='w-52 h-[1px] absolute left-0 bg-[#E5E5E5]'/>

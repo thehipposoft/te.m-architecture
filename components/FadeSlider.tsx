@@ -1,9 +1,31 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 const FadeSlider = () => {
+
+    const container = useRef(null);
+
+    useGSAP(() => {
+        gsap.from('.first__ > *',
+            {
+                opacity: 0,
+                ease: 'power3.out',
+                y: 20,
+                delay: .7,
+                stagger: .3,
+                duration: 1,
+             });
+        gsap.from('.second__' , {
+            opacity: 0,
+            ease: 'sine.in',
+            delay: 1,
+            duration: 1,
+        })
+    },{ scope: container });
 
     const SLIDER_DATA = [
         {
@@ -46,8 +68,8 @@ const FadeSlider = () => {
 
 
   return (
-    <div className='md:w-[1200px] mx-auto flex md:flex-row flex-col-reverse items-center justify-between pt-[25%] md:pt-0'>
-        <div className='flex flex-col gap-6 justify-between md:h-[475px] w-[85vw] md:w-auto pt-[5%]'>
+    <div ref={container} className='md:w-[85vw] mx-auto flex md:flex-row flex-col-reverse items-center justify-between pt-[25%] md:pt-0'>
+        <div className='first__  flex flex-col gap-6 justify-between md:h-[420px] w-[85vw] md:w-auto pt-5 md:pt-0'>
             <div className='flex flex-col relative w-[365px]'>
                 <div className={` ${currentIndex === 0 ? 'opacity-100 ' : 'opacity-0'} duration-500 flex flex-col absolute top-0`}>
                     <h4 className='uppercase text-[#DDDDDD] text-xl light'>{SLIDER_DATA[currentIndex].category}</h4>
@@ -80,7 +102,7 @@ const FadeSlider = () => {
                 </div>
             </div>
         </div>
-        <div className='relative drop-shadow-lg md:w-[705px] w-[85vw] md:h-[729px] h-[55vh]'>
+        <div className='second__ relative drop-shadow-lg md:w-[705px] w-[85vw] md:h-[729px] h-[55vh]'>
             <Image src={SLIDER_DATA[0].image} alt={`${SLIDER_DATA[0].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 0 ? 'opacity-100' : 'opacity-0'}  w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />
             <Image src={SLIDER_DATA[1].image} alt={`${SLIDER_DATA[1].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 1 ? 'opacity-100' : 'opacity-0'} w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />
             <Image src={SLIDER_DATA[2].image} alt={`${SLIDER_DATA[2].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 2 ? 'opacity-100' : 'opacity-0'} w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />

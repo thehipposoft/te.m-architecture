@@ -135,6 +135,73 @@ const DON_MARTIN = [
         alt: '',
     },
 ]
+
+const INSTITUTO_FRANKLIN = [
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/1.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/2.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/3.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/4.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/5.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/6.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/7.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/8.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/9.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/instituto-franklin/10.jpg',
+        alt: '',
+    },
+]
+
+
+const CARNEGIE_HOUSE = [
+    {
+        src: '/assets/images/services/3d-visualization/carnegie-house/1.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/carnegie-house/2.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/carnegie-house/3.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/carnegie-house/4.jpg',
+        alt: '',
+    },
+    {
+        src: '/assets/images/services/3d-visualization/carnegie-house/5.jpg',
+        alt: '',
+    },
+]
 export {
     AMPLIACION_TIPAL,
     ARMADALE_PROJECT,
@@ -142,4 +209,6 @@ export {
     CASA_RAFITA,
     DM,
     DON_MARTIN,
+    INSTITUTO_FRANKLIN,
+    CARNEGIE_HOUSE
 }
