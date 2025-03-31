@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <nav ref={container} className='flex gap-8 font-light'>
         <Link 
-            href={'/#projects'}
+            href={'/projects'}
             className={`uppercase px-2 text-xs relative tracking-widest h-fit overflow-hidden
                 ${currentPath.includes('project') ? 'after:-left-0 before:left-0' : 'hover:after:left-0 hover:before:left-0 '}
                 after:duration-700 after:content-[''] after:absolute  after:bg-black after:h-[1px] after:w-full after:-left-full hover:after:left-0
@@ -42,7 +42,7 @@ const Nav = () => {
             services
         </Link>
         <Link 
-            href={'/#about'}
+            href={'/about'}
             className={`uppercase px-2 text-xs relative tracking-widest h-fit overflow-hidden
                 after:duration-700 after:content-[''] after:absolute  after:bg-black after:h-[1px] after:w-full after:-left-full hover:after:left-0
                 before:duration-700 before:content-[''] before:bottom-0 before:absolute before:bg-black before:h-[1px] before:w-full before:-left-full hover:before:left-0 `}

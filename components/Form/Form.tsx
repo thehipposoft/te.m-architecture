@@ -138,6 +138,21 @@ const MyCustomForm = ({
                                     />
                                 </section>
                             );
+                        case 'tel':
+                            return (
+                                <section className='mb-4' key={index}>
+                                    <label className={'contact-label'}>{label}</label>
+                                    <input
+                                        type={type}
+                                        name={name}
+                                        id={name}
+                                        className={'py-3 px-8 w-3/4 bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
+                                        onChange={handleChange}
+                                        placeholder={placeholder}
+                                        required={field.required}
+                                    />
+                                </section>
+                            );
                         default:
                             return (
                                 <section className='mb-4' key={index}>

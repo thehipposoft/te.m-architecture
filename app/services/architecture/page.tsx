@@ -6,7 +6,7 @@ export default function ArchitecturePage() {
     return (
         <div>
             <ServicesLayout
-                imageOne={<Image src={'/assets/images/services/architecture-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] object-cover' />}
+                imageOne={<Image src={'/assets/images/services/architecture-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] md:w-auto object-cover' />}
                 imageTwo={<Image src={'/assets/images/services/architecture-2.jpg'} alt='' width={419} height={428} className='object-cover' />}
                 title='Architecture'
                 text={

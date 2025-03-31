@@ -39,7 +39,7 @@ const SILU_WASI = [
 function HospitalityGalleryPage () {
   return (
     <div>
-      <div className='flex flex-col md:w-[1170px] w-[85vw] mx-auto md:py-20 pt-[25%]'>
+      <div className='flex flex-col md:w-[1170px] w-[85vw] mx-auto md:py-16 pt-[25%]'>
         <div className='flex flex-col gap-4 pb-12'>
             <h1 className='text-[#DDDDDD] light text-[64px] md:leading-10 leading-[55px]'>Hospitality Projects</h1>
             <h2 className='bolde text-[35px]'>Gallery</h2>
