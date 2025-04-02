@@ -48,7 +48,7 @@ const FadeSlider = () => {
 
 
   return (
-    <div ref={container} className='md:w-[85vw] mx-auto flex md:flex-row flex-col-reverse items-center justify-between pt-[25%] md:pt-0'>
+    <div ref={container} className='md:w-[85vw] 2xl:w-[1300px] mx-auto flex md:flex-row flex-col-reverse items-center justify-between pt-[25%] md:pt-0'>
         <div className='first__  flex flex-col gap-6 justify-between md:h-[420px] w-[85vw] md:w-auto pt-5 md:pt-0'>
             <div className='flex flex-col relative w-[365px]'>
                 <div className={` ${currentIndex === 0 ? 'opacity-100 ' : 'opacity-0'} duration-500 flex flex-col absolute top-0`}>

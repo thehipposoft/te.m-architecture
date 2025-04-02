@@ -13,9 +13,9 @@ function ProjectsPage () {
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
                     {
                         PROJECTS.map((val ,index) => (
-                            <Link href={val.href} className={`group md:w-[570px] duration-300 hover:shadow-xl rounded-tr-[55px] h-[270px] relative flex items-end cursor-pointer`} key={index}>
+                            <Link href={val.href} className={`group md:w-[570px] duration-500 hover:shadow-xl rounded-tr-[55px] h-[270px] relative flex items-end cursor-pointer`} key={index}>
                                 <Image src={val.image} alt={''} fill className={`rounded-tr-[55px] object-cover `} />
-                                <h2 className='group-hover:opacity-0 absolute z-10 md:max-w-[380px] text-base duration-300 text-white left-6 bottom-4 bg-black/40 px-2 py-1 rounded-xl'>{val.fullName}</h2>
+                                <h2 className='group-hover:px-3 absolute z-10 md:max-w-[380px] text-base duration-500 text-white left-6 bottom-4 bg-black/40 px-2 py-1 rounded-xl'>{val.fullName}</h2>
                             </Link>
                         ))
                     }
