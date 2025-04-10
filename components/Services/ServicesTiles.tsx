@@ -26,7 +26,7 @@ const ServicesTiles = () => {
     },{ scope: container });
 
   return (
-    <div ref={container} className='container md:px-16 md:ml-[5%] flex md:flex-row flex-col items-center py-8 md:py-0 justify-center md:justify-start xl:justify-center border border-solid border-[#DDDDDD] md:h-[500px] md:gap-5 gap-8 2xl:gap-12'>
+    <div ref={container} className='container md:px-16 md:ml-[5%] flex md:flex-row md:flex-wrap lg:flex-nowrap flex-col items-center py-8 lg:py-0 justify-center lg:justify-start xl:justify-center border border-solid border-[#DDDDDD] lg:h-[500px] lg:gap-5 gap-8 2xl:gap-12'>
         <div className=' flex flex-col md:gap-8  gap-2 justify-center'>
             <div className='group duration-300 rounded-tr-[50px] h-[184px] w-[290px] flex items-center relative shadow-md'>
                 <Image src={'/assets/images/services/architecture-4.jpg'} alt='' fill  className='  object-contain rounded-tr-[50px]' />

@@ -4,12 +4,12 @@ import { AMPLIACION_TIPAL, ARMADALE_PROJECT, BLACKROCK_HOUSE, CASA_RAFITA, DM, D
 
 const Visualization3dMobile = () => {
   return (
-    <div className='md:hidden flex flex-col gap-4'>
+    <div className='lg:hidden flex flex-col gap-4'>
         <GalleryCard gallery={AMPLIACION_TIPAL} title='Ampliacion El Tipal by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/ampliacion-tipal/1.jpg' imageAlt='asd' width='85vw' height='471px' expandColor='#505050' rounded  />
-        <div className='flex md:flex-row flex-col-reverse items-center gap-8'>
+        <div className='flex lg:flex-row flex-col-reverse items-center gap-8'>
             <GalleryCard gallery={ARMADALE_PROJECT} title='Armadale Project by JDA Lammin Architects' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/armadale-project/1.jpg' imageAlt='asd' width='85vw' height='428px' expandColor='#111111' />
-            <div className='flex flex-col md:w-[685px]'>
-                <h1 className='bold text-xl uppercase pt-8 md:pt-0'>3d Visualization</h1>
+            <div className='flex flex-col lg:w-[685px]'>
+                <h1 className='bold text-xl uppercase pt-8 '>3d Visualization</h1>
                 <p>Through high-quality 3D , animations, and virtual tours, we bring projects to life before construction begins. Our visualizations help clients and professionals better understand designs, materials, and spatial relationships, ensuring informed decisions at every stage.</p>
             </div>
         </div>

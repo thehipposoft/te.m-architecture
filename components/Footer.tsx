@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className=' bg-[#c4c4c4] flex flex-col justify-between'>
-        <div className='flex md:flex-row flex-col items-center md:items-start justify-between md:w-[1100px] w-[85vw] mx-auto gap-8 pt-4'>
+        <div className='flex md:flex-row flex-col items-center md:items-start justify-between lg:w-[1100px] w-[85vw] mx-auto gap-8 pt-4'>
             <Image src={'/assets/images/logo-white.png'} alt='' width={160} height={186} className='w-[140px] h-[155px] pt-12' />
             <div className='flex md:gap-40 gap-16 flex-wrap justify-center md:justify-start py-8'>
               <div className='flex flex-col gap-5'>
@@ -42,7 +42,7 @@ const Footer = () => {
               <div className='flex flex-col gap-8'>
                 <h5 className='text-white  font-extrabold text-base '>Social Media</h5>
                 <div className='flex gap-8'>
-                  <Link href={''}>
+                  <Link href={'https://www.instagram.com/te.mstudiodesign/'} target='_blank'>
                       <svg viewBox="0 0 24 24" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF"><path fillRule="evenodd" clipRule="evenodd" d="M12 18c3.3137 0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6-3.31371 0-6 2.68629-6 6 0 3.3137 2.68629 6 6 6Zm0-2c2.2091 0 4-1.7909 4-4 0-2.20914-1.7909-4-4-4-2.20914 0-4 1.79086-4 4 0 2.2091 1.79086 4 4 4Z"/><path d="M18 5c-.5523 0-1 .44772-1 1s.4477 1 1 1 1-.44772 1-1-.4477-1-1-1Z"/><path fillRule="evenodd" clipRule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6v2.8c0 3.3603 0 5.0405.65396 6.3239.57524 1.129 1.49312 2.0469 2.6221 2.6221C5.55953 23 7.23969 23 10.6 23h2.8c3.3603 0 5.0405 0 6.3239-.654 1.129-.5752 2.0469-1.4931 2.6221-2.6221C23 18.4405 23 16.7603 23 13.4v-2.8c0-3.36031 0-5.04047-.654-6.32394-.5752-1.12898-1.4931-2.04686-2.6221-2.6221C18.4405 1 16.7603 1 13.4 1h-2.8c-3.36031 0-5.04047 0-6.32394.65396-1.12898.57524-2.04686 1.49312-2.6221 2.6221ZM13.4 3h-2.8c-1.71316 0-2.87775.00156-3.77792.0751-.87684.07164-1.32524.20149-1.63804.36087-.75265.3835-1.36457.99542-1.74807 1.74807-.15938.3128-.28923.7612-.36087 1.63804C3.00156 7.72225 3 8.88684 3 10.6v2.8c0 1.7132.00156 2.8777.0751 3.7779.07164.8769.20149 1.3253.36087 1.6381.3835.7526.99542 1.3645 1.74807 1.748.3128.1594.7612.2893 1.63804.3609C7.72225 20.9984 8.88684 21 10.6 21h2.8c1.7132 0 2.8777-.0016 3.7779-.0751.8769-.0716 1.3253-.2015 1.6381-.3609.7526-.3835 1.3645-.9954 1.748-1.748.1594-.3128.2893-.7612.3609-1.6381.0735-.9002.0751-2.0647.0751-3.7779v-2.8c0-1.71316-.0016-2.87775-.0751-3.77792-.0716-.87684-.2015-1.32524-.3609-1.63804-.3835-.75265-.9954-1.36457-1.748-1.74807-.3128-.15938-.7612-.28923-1.6381-.36087C16.2777 3.00156 15.1132 3 13.4 3Z"/></g></svg>
                     </Link>
                   <Link href={'https://www.linkedin.com/company/te-m/'} target='_blank'>
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex justify-center pb-5 pt-8'>
-            <Link href={'/'} className='text-white hover:underline'>Created by <span>HippoSoft</span> | All rights reserved</Link>
+            <Link href={'https://www.thehipposoft.com/'} target='_blank' className='text-white hover:underline'>Created by <span>HippoSoft</span> | All rights reserved</Link>
         </div>
     </div>
   )

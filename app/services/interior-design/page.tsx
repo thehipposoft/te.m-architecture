@@ -7,7 +7,7 @@ export default function InteriorDesignPage() {
         <div>
             <ServicesLayout
                 imageOne={<Image src={'/assets/images/services/interior-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] md:w-auto object-cover' />}
-                imageTwo={<Image src={'/assets/images/services/interior-2.jpg'} alt='' width={419} height={428} className='object-cover w-[85vw] md:w-[419px]' />}
+                imageTwo={<Image src={'/assets/images/services/interior-2.jpg'} alt='' width={419} height={428} className='object-cover w-[85vw] lg:w-[419px]' />}
                 title='Interior Design'
                 text={
                     <div>
@@ -15,9 +15,9 @@ export default function InteriorDesignPage() {
                     </div>
                 }
                 endImageLayout={
-                    <div className='md:max-w-[1170px] flex flex-col md:flex-row gap-4'>
-                        <Image src={'/assets/images/services/interior-3.jpg'} alt='' width={2048} height={1152} className='md:w-1/2 w-[85vw] md:h-[435px] h-96 object-cover object-[30%]' />
-                        <Image src={'/assets/images/services/interior-4.jpg'} alt='' width={2048} height={1152} className='md:w-1/2 w-[85vw] md:h-[435px] h-96 object-cover object-[40%]' />
+                    <div className='lg:max-w-[1170px] py-8 lg:py-0 flex flex-col lg:flex-row gap-4'>
+                        <Image src={'/assets/images/services/interior-3.jpg'} alt='' width={2048} height={1152} className='lg:w-1/2 w-[85vw] md:h-[435px] h-96 object-cover object-[30%]' />
+                        <Image src={'/assets/images/services/interior-4.jpg'} alt='' width={2048} height={1152} className='lg:w-1/2 w-[85vw] md:h-[435px] h-96 object-cover object-[40%]' />
                     </div>
                 }
              />

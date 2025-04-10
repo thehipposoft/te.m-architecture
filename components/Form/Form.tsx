@@ -131,7 +131,7 @@ const MyCustomForm = ({
                                         value={values[name]}
                                         rows={8}
                                         cols={40}
-                                        className='resize-none py-3 px-8  bg-[#f3f3f3] border-none  border-black w-3/4 focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'
+                                        className='resize-none py-3 px-8  bg-[#f3f3f3] border-none lg:w-full lg:max-w-[500px] w-full max-w-[70vw] md:max-w-[525px] border-black focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'
                                         placeholder={placeholder}
                                         onChange={handleChange}
                                         required={field.required}
@@ -146,7 +146,7 @@ const MyCustomForm = ({
                                         type={type}
                                         name={name}
                                         id={name}
-                                        className={'py-3 px-8 w-3/4 bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
+                                        className={'py-3 px-8 lg:w-full lg:max-w-[500px] w-full max-w-[70vw] md:max-w-[525px] bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
                                         onChange={handleChange}
                                         placeholder={placeholder}
                                         required={field.required}
@@ -161,7 +161,7 @@ const MyCustomForm = ({
                                         type={type}
                                         name={name}
                                         id={name}
-                                        className={'py-3 px-8 w-3/4 bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
+                                        className={'py-3 px-8 lg:w-full lg:max-w-[500px] w-full max-w-[70vw] md:max-w-[525px] bg-[#f3f3f3] border-none focus:outline-none focus:placeholder:text-gray-400 placeholder:text-[#8d8d8d]'}
                                         onChange={handleChange}
                                         value={values[name]}
                                         placeholder={placeholder}
@@ -177,7 +177,7 @@ const MyCustomForm = ({
                 disabled={isAPILoading}
                 value={submitButtonLabel ? submitButtonLabel : 'Send'}
                 type="submit"
-                className={` ${isAPILoading ? 'opacity-50' : ''}group cursor-pointer md:mt-20 light tracking-widest text-xs flex items-center px-8 gap-4 py-6 bg-[#f3f3f3] border-solid border border-[#f3f3f3] hover:text-[#f3f3f3] hover:bg-transparent duration-300  `}
+                className={` ${isAPILoading ? 'opacity-50' : ''}group cursor-pointer lg:mt-20 light tracking-widest text-xs flex items-center px-8 gap-4 py-6 bg-[#f3f3f3] border-solid border border-[#f3f3f3] hover:text-[#f3f3f3] hover:bg-transparent duration-300  `}
             >
                 {submitButtonLabel}
                 <svg width="18" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path className='duration-300 group-hover:fill-white' fillRule="evenodd" clipRule="evenodd" d="M0 4.5A.5.5 0 0 1 .5 4h16a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5Z" fill="#333"/><path className='duration-300 group-hover:fill-white' fillRule="evenodd" clipRule="evenodd" d="M12.646.646a.5.5 0 0 1 .708 0L17.207 4.5l-3.853 3.853a.5.5 0 0 1-.708-.707L15.793 4.5l-3.147-3.147a.5.5 0 0 1 0-.707Z" fill="#333"/></svg>

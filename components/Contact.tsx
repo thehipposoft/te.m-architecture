@@ -4,10 +4,10 @@ import { Form } from './Form'
 
 const Contact = () => {
   return (
-    <div className='h-screen flex justify-center items-center md:rounded-tr-[250px] relative ' id='contact'>
-      <Image src={'/assets/images/projects/silu-wasi/7.jpg'} alt='' fill className='object-cover md:object-fill md:rounded-tr-[250px]' />
+    <div className='lg:h-screen h-screen md:h-full flex justify-center items-center lg:rounded-tr-[250px] relative ' id='contact'>
+      <Image src={'/assets/images/projects/silu-wasi/7.jpg'} alt='' fill className='object-cover md:object-fill lg:rounded-tr-[250px]' />
       <div className='absolute top-0 left-0 w-full h-full md:rounded-tr-[250px] bg-black/30 z-10' />
-      <div className='relative z-20 flex md:flex-row flex-col md:w-[1130px] mx-auto items-center justify-between'>
+      <div className='relative z-20 flex lg:flex-row flex-col md:w-[1130px] md:py-8 lg:py-0 mx-auto items-center justify-between'>
         <p  className='md:text-6xl text-5xl text-white'>Contact Us</p>
         <div>
           <Form

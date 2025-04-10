@@ -5,7 +5,7 @@ import VisualizationGallery from './commons/VisualizationGallery';
 
 const Visualization3d = () => {
   return (
-    <div className='md:flex hidden flex-col gap-4'>
+    <div className='lg:flex hidden flex-col gap-4'>
         <GalleryCard gallery={AMPLIACION_TIPAL} title='Ampliacion El Tipal by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/ampliacion-tipal/1.jpg' imageAlt='asd' width='1170px' height='471px' expandColor='#505050' rounded  />
         <div className='flex md:flex-row flex-col-reverse items-center gap-8'>
             <GalleryCard gallery={ARMADALE_PROJECT} title='Armadale Project by JDA Lammin Architects' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/armadale-project/1.jpg' imageAlt='asd' width='419px' height='428px' expandColor='#111111' />
