@@ -1,6 +1,12 @@
 import ServicesLayout from '@/components/Services/ServicesLayout';
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Architecture',
+  description: 'We develop architectural projects from concept to completion, adapting to each client’s needs. Whether it’s a new build, a renovation, or an extension, we design thoughtful and functional spaces that enhance daily life. Our services range from preliminary designs to fully detailed architectural projects.',
+}
 
 export default function ArchitecturePage() {
     return (
@@ -11,7 +17,7 @@ export default function ArchitecturePage() {
                 title='Architecture'
                 text={
                     <div>
-                        <p className='roboto-light md:w-[640px]'>We develop architectural projects from concept to completion, adapting to each client’s needs. Whether it’s a new build, a renovation, or an extension, we design thoughtful and functional spaces that enhance daily life. Our services range from preliminary designs to fully detailed architectural projects. </p>                    </div>
+                        <p className='roboto-light md:w-[640px]'>We develop architectural projects from concept to completion, adapting to each client’s needs. Whether it’s a new build, a renovation, or an extension, we design thoughtful and functional spaces that enhance daily life. Our services range from preliminary designs to fully detailed architectural projects.</p>                    </div>
                 }
                 endImageLayout={
                     <div className='lg:max-w-[1170px] flex flex-col lg:flex-row justify-between'>

@@ -1,42 +1,48 @@
 import GalleryCard from '@/components/Services/GalleryCard'
 import React from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Residential Gallery',
+  description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
+}
 
 const CASA_PATIO = [
   {
       src: '/assets/images/projects/casa-patio/1.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 1',
   },
   {
       src: '/assets/images/projects/casa-patio/2.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 2',
   },
   {
       src: '/assets/images/projects/casa-patio/3.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 3',
   },
   {
       src: '/assets/images/projects/casa-patio/4.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 4',
   },
   {
       src: '/assets/images/projects/casa-patio/5.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 5',
   },
   {
       src: '/assets/images/projects/casa-patio/6.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 6',
   },
   {
       src: '/assets/images/projects/casa-patio/7.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 7',
   },
   { 
       src: '/assets/images/projects/casa-patio/8.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 8',
   },
   { 
       src: '/assets/images/projects/casa-patio/9.jpg',
-      alt: '',
+      alt: 'Residencia Casa Patio 9',
   },
 ]
 
@@ -50,17 +56,17 @@ function ResidentialGalleryPage () {
         </div>
         <div className='lg:flex hidden flex-col gap-6'>
           <div className='flex gap-6'>
-            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/1.jpg' imageAlt='asd' width='570px' height='255px' expandColor='#333333' rounded />
-            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/2.jpg' imageAlt='asd' width='570px' height='255px' expandColor='#FFFFFF' rounded />
+            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/1.jpg' imageAlt='Residencia "Casa Patio"' width='570px' height='255px' expandColor='#333333' rounded />
+            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/2.jpg' imageAlt='Residencia "Casa Patio"' width='570px' height='255px' expandColor='#FFFFFF' rounded />
           </div>
           <div className='flex gap-6 justify-between'>
-          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/3.jpg' imageAlt='asd' width='270px' height='255px' expandColor='#FFFFFF' rounded />
-          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/4.jpg' imageAlt='asd' width='470px' height='255px' expandColor='#FFFFFF' rounded />
-          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/5.jpg' imageAlt='asd' width='370px' height='255px' expandColor='#333333' rounded />
+          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/3.jpg' imageAlt='Residencia "Casa Patio"' width='270px' height='255px' expandColor='#FFFFFF' rounded />
+          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/4.jpg' imageAlt='Residencia "Casa Patio"' width='470px' height='255px' expandColor='#FFFFFF' rounded />
+          <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/5.jpg' imageAlt='Residencia "Casa Patio"' width='370px' height='255px' expandColor='#333333' rounded />
           </div>
         </div>
         <div className='lg:hidden'>
-            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/1.jpg' imageAlt='asd' width='85vw' height='455px' expandColor='#333333' rounded />
+            <GalleryCard gallery={CASA_PATIO} title='Casa Patio' titleColor='#FFFFFF' imageSrc='/assets/images/projects/casa-patio/1.jpg' imageAlt='Residencia "Casa Patio"' width='85vw' height='455px' expandColor='#333333' rounded />
         </div>
     </div>
   )

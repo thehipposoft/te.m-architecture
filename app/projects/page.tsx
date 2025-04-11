@@ -2,6 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import { PROJECTS } from './constants'
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Proyects',
+  description: 'Look at the last proyects from Te. Architecture Studio',
+}
 
 function ProjectsPage () {
   return (

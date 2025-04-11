@@ -1,6 +1,12 @@
 import ServicesLayout from '@/components/Services/ServicesLayout';
 import Image from 'next/image';
 import React from 'react';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Architecture',
+  description: 'We create personalized interior spaces that reflect your style and enhance comfort. From material selection to spatial optimization, we focus on functionality and aesthetics to bring your vision to life. Whether for homes, offices, or commercial spaces, we design interiors that feel both inspiring and practical.',
+}
 
 export default function InteriorDesignPage() {
     return (

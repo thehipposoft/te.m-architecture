@@ -32,13 +32,13 @@ const VisualizationGallery = () => {
                 className={`${currentIndex === 0 ? 'opacity-100 z-30' : 'opacity-0'} grid grid-cols-3 grid-rows-10 h-[880px] duration-700 w-[1170px] gap-5 absolute`}
             >
                 <div className='row-span-4 relative'>
-                    <GalleryCard gallery={CASA_RAFITA} title='Casa Rafita by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/casa-rafita/1.jpg' imageAlt='asd' width='100%' height='100%' expandColor='#505050' rounded absolute/>
+                    <GalleryCard gallery={CASA_RAFITA} title='Casa Rafita by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/casa-rafita/1.jpg' imageAlt='Visualizacion 3d: Casa Rafita' width='100%' height='100%' expandColor='#505050' rounded absolute/>
                 </div>
                 <div className='row-span-3 relative'>
-                    <GalleryCard gallery={DM} title='DM by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/dm/1.jpg' imageAlt='asd' width='100%' height='100%' expandColor='#FFFFFF' rounded absolute/>
+                    <GalleryCard gallery={DM} title='DM by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/dm/1.jpg' imageAlt='Visualizacion 3d: DM Sandwicheria' width='100%' height='100%' expandColor='#FFFFFF' rounded absolute/>
                 </div>
                 <div className='row-span-5 relative'>
-                    <GalleryCard gallery={DON_MARTIN} title='Restaurante Don Martin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/don-martin/1.jpg' imageAlt='asd' width='100%' height='100%' expandColor='#505050' rounded absolute />
+                    <GalleryCard gallery={DON_MARTIN} title='Restaurante Don Martin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/don-martin/1.jpg' imageAlt='Visualizacion 3d: Don Martin' width='100%' height='100%' expandColor='#505050' rounded absolute />
                 </div>
                 <div className='row-span-4 relative '>
                     <Image src={'/assets/images/services/3d-visualization/dm/2.jpg'} className='object-cover rounded-xl' fill alt='' />
@@ -63,10 +63,10 @@ const VisualizationGallery = () => {
                 className={`${currentIndex === 1 ? 'opacity-100 z-30' : 'opacity-0'} grid grid-cols-3 grid-rows-10 h-[880px] duration-700 w-[1170px] gap-5 absolute`}
             >
                 <div className='row-span-4 relative'>
-                    <GalleryCard gallery={INSTITUTO_FRANKLIN} title='Instituto Franklin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/instituto-franklin/1.jpg' imageAlt='asd' width='100%' height='100%' expandColor='#505050' rounded absolute/>
+                    <GalleryCard gallery={INSTITUTO_FRANKLIN} title='Instituto Franklin by Espacio Guzman' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/instituto-franklin/1.jpg' imageAlt='Visualizacion 3d: Instituto Franklin' width='100%' height='100%' expandColor='#505050' rounded absolute/>
                 </div>
                 <div className='row-span-3 relative'>
-                    <GalleryCard gallery={CARNEGIE_HOUSE} title='Carnegie House by JDALammin Architects' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/carnegie-house/1.jpg' imageAlt='asd' width='100%' height='100%' expandColor='#FFFFFF' rounded absolute/>
+                    <GalleryCard gallery={CARNEGIE_HOUSE} title='Carnegie House by JDALammin Architects' titleColor='#FFFFFF' imageSrc='/assets/images/services/3d-visualization/carnegie-house/1.jpg' imageAlt='Visualizacion 3d: Carnegie House' width='100%' height='100%' expandColor='#FFFFFF' rounded absolute/>
                 </div>
                 <div className='row-span-5 relative'>
                 </div>

@@ -2,6 +2,12 @@ import ProjectLayout from '@/components/ProjectLayout'
 import React from 'react'
 import Image from 'next/image'
 import GalleryCard from '@/components/Services/GalleryCard'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Proyects: Silu Wasi Hotel',
+  description: 'Silu Wasi is more than just a hotel, it’s a space designed to be inclusive, sustainable, and deeply connected to its surroundings.',
+}
 
 function SiluWasiPage () {
 
@@ -9,35 +15,35 @@ function SiluWasiPage () {
     gallery: [
       {
         src: '/assets/images/projects/silu-wasi/1-fw.webp',
-        alt: ''
+        alt: 'Hotel Silu Wasi 1'
       },
       {
         src: '/assets/images/projects/silu-wasi/2.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 2'
       },
       {
         src: '/assets/images/projects/silu-wasi/3.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 3'
       },
       {
         src: '/assets/images/projects/silu-wasi/4.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 4'
       },
       {
         src: '/assets/images/projects/silu-wasi/5.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 5'
       },
       {
         src: '/assets/images/projects/silu-wasi/6.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 6'
       },
       {
         src: '/assets/images/projects/silu-wasi/7.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 7'
       },
       {
         src: '/assets/images/projects/silu-wasi/8.jpg',
-        alt: ''
+        alt: 'Hotel Silu Wasi 8'
       },
     ],
     projectName: 'hotel boutique silu wasi',
@@ -63,7 +69,7 @@ function SiluWasiPage () {
         <ProjectLayout 
           gallery={PROJECT_DATA.gallery}
           mobileGallery={
-            <GalleryCard gallery={PROJECT_DATA.gallery} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='asd' width='85vw' height='450px' expandColor='#333333' rounded  />
+            <GalleryCard gallery={PROJECT_DATA.gallery} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='Hotel Silu Wasi' width='85vw' height='450px' expandColor='#333333' rounded  />
           }
           projectName={PROJECT_DATA.projectName} 
           typology={PROJECT_DATA.typology}

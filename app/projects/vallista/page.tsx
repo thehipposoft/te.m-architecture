@@ -2,6 +2,12 @@ import ProjectLayout from '@/components/ProjectLayout'
 import React from 'react'
 import Image from 'next/image'
 import GalleryCard from '@/components/Services/GalleryCard'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Proyects: Cervezeria Artesnal Vallista',
+  description: 'From the start, Vallista Craft Brewery was designed to embrace the authenticity of its craft—raw materials, an untouched natural setting, and a brewing process that honors tradition.',
+}
 
 function SiluWasiPage () {
 
@@ -9,23 +15,23 @@ function SiluWasiPage () {
     gallery: [
       {
         src: '/assets/images/projects/vallista/1.jpg',
-        alt: ''
+        alt: 'Cervezeria Artesanal Vallista 1'
       },
       {
         src: '/assets/images/projects/vallista/2.jpg',
-        alt: ''
+        alt: 'Cervezeria Artesanal Vallista 2'
       },
       {
         src: '/assets/images/projects/vallista/3.jpg',
-        alt: ''
+        alt: 'Cervezeria Artesanal Vallista 3'
       },
       {
         src: '/assets/images/projects/vallista/4.jpg',
-        alt: ''
+        alt: 'Cervezeria Artesanal Vallista 4'
       },
       {
         src: '/assets/images/projects/vallista/5.jpg',
-        alt: ''
+        alt: 'Cervezeria Artesanal Vallista 5'
       },
     ],
     projectName: 'FABRICA DE CERVEZA ARTESANAL “VALLISTA”',
@@ -51,7 +57,7 @@ function SiluWasiPage () {
         <ProjectLayout 
           gallery={PROJECT_DATA.gallery}
           mobileGallery={
-            <GalleryCard gallery={PROJECT_DATA.gallery} title='Fabrica de Cerveza Artesanal "Vallista"' titleColor='#FFFFFF' imageSrc='/assets/images/projects/vallista/1.jpg' imageAlt='asd' width='85vw' height='450px' expandColor='#FFFFFF' rounded  />
+            <GalleryCard gallery={PROJECT_DATA.gallery} title='Fabrica de Cerveza Artesanal "Vallista"' titleColor='#FFFFFF' imageSrc='/assets/images/projects/vallista/1.jpg' imageAlt='Cervezeria Artesanal Vallista' width='85vw' height='450px' expandColor='#FFFFFF' rounded  />
           }
           projectName={PROJECT_DATA.projectName} 
           typology={PROJECT_DATA.typology}

@@ -1,22 +1,28 @@
 import GalleryCard from '@/components/Services/GalleryCard'
 import React from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Interior Design Gallery',
+  description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
+}
 
 const INTERIOR_DESIGN = [
   {
       src: '/assets/images/services/interior-1.jpg',
-      alt: '',
+      alt: 'Diseño de interiores 1',
   },
   {
       src: '/assets/images/services/interior-2.jpg',
-      alt: '',
+      alt: 'Diseño de interiores 2',
   },
   {
       src: '/assets/images/services/interior-3.jpg',
-      alt: '',
+      alt: 'Diseño de interiores 3',
   },
   {
       src: '/assets/images/services/interior-4.jpg',
-      alt: '',
+      alt: 'Diseño de interiores 4',
   },
 ]
 
@@ -30,16 +36,16 @@ function InteriorDesignGalleryPage () {
         </div>
         <div className='lg:flex hidden flex-col gap-6'>
           <div className='flex gap-6'>
-            <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-1.jpg' imageAlt='asd' width='570px' height='255px' expandColor='#FFFFFF' rounded />
-            <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-2.jpg' imageAlt='asd' width='570px' height='255px' expandColor='#FFFFFF' rounded />
+            <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-1.jpg' imageAlt='Diseño de interiores' width='570px' height='255px' expandColor='#FFFFFF' rounded />
+            <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-2.jpg' imageAlt='Diseño de interiores' width='570px' height='255px' expandColor='#FFFFFF' rounded />
           </div>
           <div className='flex gap-6'>
-          <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-3.jpg' imageAlt='asd' width='270px' height='255px' expandColor='#FFFFFF' rounded />
-          <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-4.jpg' imageAlt='asd' width='470px' height='255px' expandColor='#FFFFFF' rounded />
+          <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-3.jpg' imageAlt='Diseño de interiores' width='270px' height='255px' expandColor='#FFFFFF' rounded />
+          <GalleryCard gallery={INTERIOR_DESIGN} titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-4.jpg' imageAlt='Diseño de interiores' width='470px' height='255px' expandColor='#FFFFFF' rounded />
           </div>
         </div>
         <div className='lg:hidden'>
-            <GalleryCard gallery={INTERIOR_DESIGN} title='Interior Design' titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-1.jpg' imageAlt='asd' width='85vw' height='455px' expandColor='#333333' rounded />
+            <GalleryCard gallery={INTERIOR_DESIGN} title='Interior Design' titleColor='#FFFFFF' imageSrc='/assets/images/services/interior-1.jpg' imageAlt='Diseño de interiores' width='85vw' height='455px' expandColor='#333333' rounded />
         </div>
     </div>
   )

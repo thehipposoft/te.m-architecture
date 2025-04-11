@@ -1,6 +1,12 @@
 import ServicesLayout from '@/components/Services/ServicesLayout';
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Modeling',
+  description: 'We provide BIM modeling services for architecture and structural projects, ensuring precision, efficiency, and better coordination between disciplines. Our models optimize workflows, improve clash detection, and enhance project visualization, reducing errors and increasing efficiency throughout the process.',
+}
 
 export default function ModelingPage() {
     return (

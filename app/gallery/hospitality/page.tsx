@@ -1,38 +1,44 @@
 import GalleryCard from '@/components/Services/GalleryCard'
+import type { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: 'Te. M Architecture | Hospitality Gallery',
+  description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
+}
 
 const SILU_WASI = [
   {
       src: '/assets/images/projects/silu-wasi/1-fw.webp',
-      alt: '',
+      alt: 'Hotel Silu Wasi 1',
   },
   {
       src: '/assets/images/projects/silu-wasi/2.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 2',
   },
   {
       src: '/assets/images/projects/silu-wasi/3.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 3',
   },
   {
       src: '/assets/images/projects/silu-wasi/4.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 4',
   },
   {
       src: '/assets/images/projects/silu-wasi/5.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 5',
   },
   {
       src: '/assets/images/projects/silu-wasi/6.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 6',
   },
   {
       src: '/assets/images/projects/silu-wasi/7.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 7',
   },
   { 
       src: '/assets/images/projects/silu-wasi/8.jpg',
-      alt: '',
+      alt: 'Hotel Silu Wasi 8',
   },
 ]
 
@@ -47,17 +53,17 @@ function HospitalityGalleryPage () {
         </div>
         <div className='lg:flex hidden flex-col gap-6'>
           <div className='flex gap-6'>
-            <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='asd' width='570px' height='255px' expandColor='#333333' rounded />
-            <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/2.jpg' imageAlt='asd' width='570px' height='255px' expandColor='#333333' rounded />
+            <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='Hotel Silu Wasi' width='570px' height='255px' expandColor='#333333' rounded />
+            <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/2.jpg' imageAlt='Hotel Silu Wasi' width='570px' height='255px' expandColor='#333333' rounded />
           </div>
           <div className='flex gap-6 justify-between'>
-          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/3.jpg' imageAlt='asd' width='270px' height='255px' expandColor='#333333' rounded />
-          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/4.jpg' imageAlt='asd' width='470px' height='255px' expandColor='#333333' rounded />
-          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/5.jpg' imageAlt='asd' width='370px' height='255px' expandColor='#333333' rounded />
+          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/3.jpg' imageAlt='Hotel Silu Wasi' width='270px' height='255px' expandColor='#333333' rounded />
+          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/4.jpg' imageAlt='Hotel Silu Wasi' width='470px' height='255px' expandColor='#333333' rounded />
+          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/5.jpg' imageAlt='Hotel Silu Wasi' width='370px' height='255px' expandColor='#333333' rounded />
           </div>
         </div>
         <div className='lg:hidden'>
-          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='asd' width='85vw' height='455px' expandColor='#FFFFFF' rounded />
+          <GalleryCard gallery={SILU_WASI} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='Hotel Silu Wasi' width='85vw' height='455px' expandColor='#FFFFFF' rounded />
         </div>
     </div>
     </div>

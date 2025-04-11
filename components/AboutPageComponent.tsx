@@ -10,7 +10,7 @@ const AboutPageComponent = () => {
                     <Image src={'/assets/images/about/about.jpg'} alt='Mica and Flor photo' width={1533} height={1750} className='lg:w-[358px] md:w-[500px] w-[85vw] md:h-[457px] h-96 object-cover rounded-tl-2xl rounded-tr-[65px] mx-auto lg:mx-0' />
                     <div className='w-1/3 flex flex-col gap-4 justify-center'>
                         <p className='text-6xl text-[#DDDDDD] m-0'>About</p>
-                        <p className='pt-4 m-0 leading-7 lg:w-[485px] w-[85vw]'><strong className='bold'>We are Mica and Flor</strong>, lifelong friends united by a shared passion: design and architecture. We studied together at the National University of Córdoba, Argentina, and since then, we have shared the desire to create spaces that truly adapt to the people who inhabit them</p>
+                        <p className='pt-4 m-0 leading-7 lg:w-[485px] w-[85vw]'><strong className='bold'>We are Mica and Flor</strong>, lifelong friends united by a shared passion: design and architecture. We studied together at the National University of Córdoba, Argentina, and since then, we have shared the desire to create spaces that truly adapt to the people who inhabit them.</p>
                     </div>
                 </div>
             </div>
