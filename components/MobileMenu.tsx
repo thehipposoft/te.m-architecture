@@ -21,6 +21,9 @@ const MobileMenu = () => {
             </button>
             <div className={`${isToggle ? 'left-0' : 'left-full'} flex justify-center items-center  bg-[#FFFFFF] duration-500 absolute w-screen h-screen top-0 left-0`}>
                     <div className='flex flex-col justify-center items-center py-20 gap-12 w-[75vw] border border-solid border-[#DDDDDD] rounded-tr-[50px]'>
+                        <Link href={'/'} className='border-b sm:p-2 text-2xl' onMouseUp={toggleMenu} >
+                            Home
+                        </Link>
                         <Link href={'/#projects'} className='border-b sm:p-2 text-2xl' onMouseUp={toggleMenu} >
                             Projects
                         </Link>

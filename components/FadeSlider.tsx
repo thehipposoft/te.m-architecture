@@ -82,7 +82,7 @@ const FadeSlider = () => {
                 </div>
             </div>
         </div>
-        <div className='second__ relative drop-shadow-lg lg:w-[705px] w-[85vw] lg:h-[729px] h-[55vh] md:h-[60vh]'>
+        <div className='second__ relative drop-shadow-lg lg:w-[705px] w-[85vw] lg:h-[729px] h-[55vh] md:h-[60vh] bg-black/70 rounded-tr-3xl md:rounded-tr-[200px] rounded-tl-[20px]'>
             <Image src={PROJECTS[0].image} alt={`${PROJECTS[0].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 0 ? 'opacity-100' : 'opacity-0'}  w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />
             <Image src={PROJECTS[1].image} alt={`${PROJECTS[1].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 1 ? 'opacity-100' : 'opacity-0'} w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />
             <Image src={PROJECTS[2].image} alt={`${PROJECTS[2].name} project image`} width={1021} height={1052} className={`duration-1000 ${currentIndex === 2 ? 'opacity-100' : 'opacity-0'} w-full h-full rounded-tl-[20px] rounded-tr-3xl md:rounded-tr-[200px] object-cover absolute left-0 top-0`} />

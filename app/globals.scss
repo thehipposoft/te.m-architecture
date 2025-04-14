@@ -56,3 +56,16 @@ h1, h2 {
 .bottom-border {
   border-bottom: solid 1px #DDDDDD;
 }
+
+#header-nav {
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 400px;
+}
+
+@keyframes blur {
+  to {
+    background: #f3f8f8ba;
+    backdrop-filter: blur(7px);
+  }
+}

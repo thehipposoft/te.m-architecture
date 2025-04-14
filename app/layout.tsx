@@ -20,7 +20,9 @@ export default function RootLayout({
       cz-shortcut-listen="true"
       >
         <Header />
-        {children}
+        <div className="md:pt-[99px] pt-0">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
