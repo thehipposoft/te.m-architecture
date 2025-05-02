@@ -4,8 +4,6 @@ import { FeedData, Post } from '@/src/types';
 import Image from 'next/image';
 
 const InstagramFeed = ({feedData}:FeedData) => {
-
-  console.log('Feed:', feedData)
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:p-4 lg:w-[1100px] mx-auto">
       {feedData.map((val:Post, index) => (
