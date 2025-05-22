@@ -38,7 +38,6 @@ const Contact = () => {
                       type: 'text',
                       label: '',
                       placeholder: 'Interested In',
-                      required: true,
                   },
                   {
                       name: 'message',
