@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className=' bg-[#c4c4c4] flex flex-col justify-between'>
         <div className='flex md:flex-row flex-col items-center md:items-start justify-between lg:w-[1100px] w-[85vw] mx-auto gap-8 pt-4'>
-            <Image src={'/assets/images/logo-white.png'} alt='' width={160} height={186} className='w-[140px] h-[155px] pt-12' />
+            <Image src={'/assets/images/logo-white.png'} alt='' width={160} height={186} className='md:w-[140px] w-[130px] h-[155px] pt-12' />
             <div className='flex md:gap-40 gap-16 flex-wrap justify-center md:justify-start py-8'>
               <div className='flex flex-col gap-5'>
                 <h5 className='text-white  font-extrabold text-base'>Information</h5>

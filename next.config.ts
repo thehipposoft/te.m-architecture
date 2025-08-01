@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "*.cdninstagram.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "admin.temarqui.com",
+        port: "",
+      },
     ],
   },
 };
