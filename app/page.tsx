@@ -12,7 +12,7 @@ export default async function Home() {
 
   const instagramFeed: Post[] = await getFeed();
   const projectsData: Proyecto[] = await getAllProjects();
-  
+
   return (
     <div className="">
       <main className="">

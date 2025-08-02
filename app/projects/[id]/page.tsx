@@ -3,16 +3,16 @@ import ProjectLayout from "@/components/ProjectLayout";
 import { ResolvingMetadata, Metadata } from "next";
 
 type Params = {
-    params: {
-      id: number
-    }
+    params: Promise<{
+      id: number;
+  }>;
 }
 
 export async function generateMetadata({
   params
 }: Params, parent: ResolvingMetadata): Promise<Metadata> {
-  const id = params.id;
-  const project = await getProject(id).then((res:any) => res);
+  const resolvedParams = await params;
+  const project = await getProject(resolvedParams.id).then((res:any) => res);
 
   if (project) {
     const previousImages = (await parent).openGraph?.images || [];
@@ -35,17 +35,16 @@ export async function generateMetadata({
 }
 
 export default async function ProjectPage({ params }: Params) {
+  const resolvedParams = await params;
+  const project = await getProject(resolvedParams.id);
 
-  const { id } = params;
-  const project = await getProject(id);
-
-    return(
-        <div>
-            {
-             project && <ProjectLayout project={project} />
-            }
-        </div>
-    )
+  return(
+    <div>
+      {
+        project && <ProjectLayout project={project} />
+      }
+    </div>
+  )
 }
 
 
