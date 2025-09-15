@@ -12,8 +12,20 @@ export default function ModelingPage() {
     return (
         <div>
             <ServicesLayout
-                imageOne={<Image src={'/assets/images/services/modeling-1.jpg'} alt='' width={3640} height={3204} className='lg:w-[1170px] w-[85vw] md:h-[525px] h-96 rounded-tr-[55px] object-cover' />}
-                imageTwo={<Image src={'/assets/images/services/modeling-2.jpg'} alt='' width={3116} height={2427} className='lg:w-[419px] w-[85vw] md:h-[428px] h-96  object-cover' />}
+                imageOne={<Image
+                    src={'/assets/images/services/modeling-1.jpg'}
+                    alt=''
+                    width={3640}
+                    height={3204}
+                    className='lg:w-[1170px] w-[85vw] md:h-[525px] h-96 rounded-tr-[55px] object-cover'
+                />}
+                imageTwo={<Image
+                    src={'/assets/images/services/modeling-2.jpg'}
+                    alt=''
+                    width={3116}
+                    height={2427}
+                    className='lg:w-[419px] w-[85vw] md:h-[428px] h-96 object-cover'
+                />}
                 title='Modeling'
                 text={
                     <div>

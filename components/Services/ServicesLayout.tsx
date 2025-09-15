@@ -1,4 +1,5 @@
-import React from 'react'
+import dynamic from 'next/dynamic';
+const SimpleIFCViewer = dynamic(() => import('./SimpleIFCViewer'), { ssr: true });
 
 type ServicesLayoutDataType = {
     imageOne: any,
@@ -8,9 +9,16 @@ type ServicesLayoutDataType = {
     endImageLayout: any,
 }
 
-const ServicesLayout = ({imageOne, imageTwo, title, text, endImageLayout}:ServicesLayoutDataType) => {
+const ServicesLayout = ({
+  imageOne,
+  imageTwo,
+  title,
+  text,
+  endImageLayout
+}: ServicesLayoutDataType) => {
   return (
     <div className='flex flex-col gap-4'>
+        <SimpleIFCViewer ifcUrl='/models/casa-CyP.ifc' />
         {imageOne}
         <div className='flex flex-col-reverse lg:flex-row items-center md:gap-8 gap-4'>
             {imageTwo}

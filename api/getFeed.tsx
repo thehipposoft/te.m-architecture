@@ -1,17 +1,26 @@
 export default async function getFeed() {
-    const token = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+    const longLivedAccessToken = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+    const apiUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${longLivedAccessToken}`;
 
-    if (!token) throw new Error("Instagram token is missing");
+    const refreshAccessToken = async () => {
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
 
-    const res = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&limit=6&access_token=${token}`);
+            const res = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&limit=6&access_token=${data.access_token}`);
+            const resJson:any = await res.json();
+            const result = resJson.data;
 
-    const resJson:any = await res.json();
+            if (!res.ok) {
+                throw new Error('Failed to fetch data')
+            }
 
-    const result = resJson.data;
+            return result;
 
-    if (!res.ok) {
-        throw new Error('Failed to fetch data')
-    }
+        } catch (error) {
+            throw new Error('Failed to refresh token');
+        }
+    };
 
-    return result;
+    return refreshAccessToken();
   }
