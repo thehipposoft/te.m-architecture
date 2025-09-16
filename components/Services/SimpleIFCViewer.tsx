@@ -12,7 +12,7 @@ export default function IfcViewer({ ifcUrl }: { ifcUrl: string }) {
 		if (!containerRef.current) return;
 
 		const viewer = new IfcViewerAPI({ container: containerRef.current });
-		viewer.IFC.setWasmPath('/wasm/');
+		viewer.IFC.setWasmPath(`${window.location.origin}/wasm/`);
 
 		viewer.IFC.loader.ifcManager.applyWebIfcConfig({
 			COORDINATE_TO_ORIGIN: true,
