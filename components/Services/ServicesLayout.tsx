@@ -19,7 +19,6 @@ const ServicesLayout = ({
   return (
     <div className='flex flex-col gap-4'>
         <SimpleIFCViewer ifcUrl='/models/casa-CyP.ifc' />
-        {imageOne}
         <div className='flex flex-col-reverse lg:flex-row items-center md:gap-8 gap-4'>
             {imageTwo}
             <div className='flex flex-col lg:w-[685px] w-[85vw] pt-12'>
