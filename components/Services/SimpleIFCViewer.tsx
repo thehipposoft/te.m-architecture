@@ -12,8 +12,10 @@ export default function IfcViewer({ ifcUrl }: { ifcUrl: string }) {
 		if (!containerRef.current) return;
 
 		const viewer = new IfcViewerAPI({ container: containerRef.current });
-		//viewer.IFC.setWasmPath('/wasm/');
-		viewer.IFC.loader.ifcManager.setWasmPath('/wasm/');
+		viewer.IFC.setWasmPath('/wasm/');
+
+		// Optional: set background color
+  		viewer.context.getScene().background = new THREE.Color(0xf6f7f9);
 
 		viewer.IFC.loader.ifcManager.applyWebIfcConfig({
 			COORDINATE_TO_ORIGIN: true,
