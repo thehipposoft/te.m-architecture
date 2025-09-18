@@ -1,6 +1,10 @@
-'use client';
-import SimpleIFCViewer from './SimpleIFCViewer';
+import dynamic from 'next/dynamic';
+const SimpleIFCViewer = dynamic(() => import('./SimpleIFCViewer'), { ssr: true });
 
-export default function ViewerWrapper() {
-    return <SimpleIFCViewer ifcUrl="/models/casa-CyP.ifc" />;
+const ViewerWrapper = () => {
+    return (
+        <SimpleIFCViewer ifcUrl='/models/casa-CyP.ifc' />
+    )
 }
+
+export default ViewerWrapper;
