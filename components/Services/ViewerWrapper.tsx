@@ -1,9 +1,8 @@
-import dynamic from 'next/dynamic';
-const SimpleIFCViewer = dynamic(() => import('./SimpleIFCViewer'), { ssr: true });
+import IfcViewer from "./SimpleIFCViewer";
 
 const ViewerWrapper = () => {
     return (
-        <SimpleIFCViewer ifcUrl='/models/casa-CyP.ifc' />
+        <IfcViewer ifcUrl='/models/casa-CyP.ifc' />
     )
 }
 
