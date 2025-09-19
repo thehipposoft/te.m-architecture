@@ -3760,6 +3760,11 @@ web-ifc@^0.0.39:
   resolved "https://registry.yarnpkg.com/web-ifc/-/web-ifc-0.0.39.tgz#c3c7e9b16aad79f8ad78e346671cb5b854480737"
   integrity sha512-sg+DyxDiyXBqlXXbz+uSqw8IGX+mVvHmn2+hg6UXDvAcrzJJw8EI2H4ZzlxWxCqqdpGVeK0wCpdeQm43UCDbrA==
 
+web-ifc@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/web-ifc/-/web-ifc-0.0.71.tgz#d274e93618c63334ce11dba223ba1430fe4b68ac"
+  integrity sha512-T2DCLthJpEm/kEVo8QGD6KTZjDhsbGkoVJI2mdcngjW5G9dvzZtJ0rtvCVOpr5Bge1Fd0fSYoO/R/6V10xbeVQ==
+
 which-boxed-primitive@^1.1.0, which-boxed-primitive@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/which-boxed-primitive/-/which-boxed-primitive-1.1.1.tgz#d76ec27df7fa165f18d5808374a5fe23c29b176e"

@@ -1,8 +1,9 @@
-import IfcViewer from "./SimpleIFCViewer";
+
+import IFCViewer from "./IFCViewer";
 
 const ViewerWrapper = () => {
     return (
-        <IfcViewer ifcUrl='/models/casa-CyP.ifc' />
+        <IFCViewer ifcUrl='/models/casa-CyP.ifc' />
     )
 }
 
