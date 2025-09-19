@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as OBC from "@thatopen/components";
+import * as THREE from 'three';
 
 function IFCViewer({ifcUrl}: {ifcUrl: string}) {
     const containerRef = useRef(null);
@@ -25,9 +26,9 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
             components.init();
             world.camera.controls.setLookAt(10, 10, 10, 0, 0, 0);
             world.scene.setup();
-
-            const grids = components.get(OBC.Grids);
-            grids.create(world);
+            world.scene.three.background = new THREE.Color(0xf6f7f9);
+            //const grids = components.get(OBC.Grids);
+            //grids.create(world);
 
             const fragments = components.get(OBC.FragmentsManager);
             const fragmentIfcLoader = await components.get(OBC.IfcLoader);
@@ -50,6 +51,22 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
                 model.useCamera(world.camera.three);
                 world.scene.three.add(model.object);
                 fragments.core.update(true);
+
+                // 👇 Custom camera positioning after model loads
+                setTimeout(() => {
+                    // Position camera like in your example
+                    world.camera.three.position.set(0, 10, 40);
+
+                    // Ensure it looks at the model center
+                    world.camera.three.lookAt(new THREE.Vector3(0, 0, 50));
+
+                    // Sync with OrbitControls
+                    world.camera.controls.setLookAt(
+                        0, 20, 40,   // camera position
+                        0, 0, 0,     // target
+                        true         // smooth transition
+                    );
+                }, 100);
             });
 
             const file = await fetch(ifcUrl);
