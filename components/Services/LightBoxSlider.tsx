@@ -28,7 +28,7 @@ const LightBoxSlider = ({projectImages}:any) => {
                         projectImages.map((val:any, index:any) => (
                             <div
                                 key={index}
-                                className='duration-500 ease-in-out xl:min-w-[1300px] w-screen xl:w-auto flex justify-center items-center'
+                                className='duration-500 ease-in-out relative xl:min-w-[1300px] w-screen xl:w-auto flex justify-center items-center'
                                 style={{
                                     translate: `${-100 * imageIndex}%`,
                                 }}
@@ -41,6 +41,7 @@ const LightBoxSlider = ({projectImages}:any) => {
                                     key={index}
                                     width={1100}
                                     height={650}
+                                    sizes='90vw'
                                 />
                             </div>
 

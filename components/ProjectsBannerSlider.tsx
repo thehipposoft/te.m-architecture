@@ -35,7 +35,12 @@ const reversedGallery = [...gallery].reverse();
             {
                 reversedGallery.map((val:any, index:number) => (
                     <div key={index}>
-                        <Image src={val.full_image_url} alt={val.alt_text} fill className={`md:duration-1000 duration-500 ${currentIndex === index ? 'opacity-100  ' : 'opacity-0'} object-cover rounded-tr-3xl md:rounded-tr-[200px]`} />
+                        <Image 
+                        src={val.full_image_url} 
+                        alt={val.alt_text} 
+                        fill
+                        sizes='100vw'
+                        className={`md:duration-1000 duration-500 ${currentIndex === index ? 'opacity-100  ' : 'opacity-0'} object-cover rounded-tr-3xl md:rounded-tr-[200px]`} />
                     </div>
                 ))
             }

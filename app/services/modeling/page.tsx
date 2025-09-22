@@ -14,16 +14,16 @@ export default function ModelingPage() {
             <ServicesLayout
                 imageOne={<Image
                     src={'/assets/images/services/modeling-1.jpg'}
-                    alt=''
+                    alt='Services Modeling: Image 1'
                     width={3640}
                     height={3204}
                     className='lg:w-[1170px] w-[85vw] md:h-[525px] h-96 rounded-tr-[55px] object-cover'
                 />}
                 imageTwo={<Image
                     src={'/assets/images/services/modeling-2.jpg'}
-                    alt=''
-                    width={3116}
-                    height={2427}
+                    alt='Services Modeling: Image 2'
+                    width={419}
+                    height={428}
                     className='lg:w-[419px] w-[85vw] md:h-[428px] h-96 object-cover'
                 />}
                 title='Modeling'
@@ -33,7 +33,7 @@ export default function ModelingPage() {
                     </div>
                 }
                 endImageLayout={
-                        <Image src={'/assets/images/services/modeling-4.jpg'} alt='' width={5365} height={2324} className='lg:w-[1170px] w-[85vw] md:h-[435px] h-96 object-contain' />
+                        <Image src={'/assets/images/services/modeling-4.jpg'} alt='' sizes='1170' width={1170} height={435} className='lg:w-[1170px] w-[85vw] md:h-[435px] h-96 object-contain' />
                 }
              />
         </div>

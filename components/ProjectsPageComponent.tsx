@@ -19,7 +19,13 @@ const ProjectsPageComponent = ({ projectsToDisplay }:Props) => {
                     projectsToDisplay.map((project: Proyecto, index: number) => (
                         <Link href={`/projects/${project.id}`} className={`group lg:w-[570px] md:w-[80vw] duration-500 hover:shadow-xl rounded-tr-[55px] h-[270px] relative flex items-end cursor-pointer`} key={index}>
                             <div className='xl:block xl:bg-black/25 bg-black/10 group-hover:opacity-0 duration-500 absolute left-0 top-0 z-[5] w-full h-full rounded-tr-[55px]' /> 
-                            <Image src={project.imagen_principal_banner} alt={''} fill className={`rounded-tr-[55px] object-cover `} />
+                            <Image 
+                                src={project.imagen_principal_banner} 
+                                alt={`Image of project ${project.nombre}`} 
+                                sizes='570px'
+                                fill 
+                                className={`rounded-tr-[55px] object-cover `}
+                             />
                             <h2 className='group-hover:px-3 absolute z-10 md:max-w-[380px] text-base duration-500 text-white left-6 bottom-4 bg-black/40 px-2 py-1 rounded-xl'>{project.nombre}</h2>
                         </Link>
                     ))

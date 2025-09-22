@@ -16,8 +16,8 @@ const InstagramFeed = ({feedData}:FeedData) => {
         >
             <Image
                 unoptimized
-                width={400}
-                height={400}
+                fill
+                sizes='350px'
                 src={`${val.media_type === 'VIDEO' ? val.thumbnail_url : val.media_url}`}
                 alt={val.caption?.slice(0, 100) || 'Instagram post'}
                 className="object-cover transition-transform duration-700"

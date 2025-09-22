@@ -12,8 +12,8 @@ export default function ArchitecturePage() {
     return (
         <div>
             <ServicesLayout
-                imageOne={<Image src={'/assets/images/services/architecture-1.jpg'} alt='' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] lg:w-auto object-cover' />}
-                imageTwo={<Image src={'/assets/images/services/architecture-2.jpg'} alt='' width={419} height={428} className='object-cover' />}
+                imageOne={<Image src={'/assets/images/services/architecture-1.jpg'} alt='Services Architecture 1 Image' width={1170} height={435} className='rounded-tr-[55px] w-[85vw] lg:w-auto object-cover' />}
+                imageTwo={<Image src={'/assets/images/services/architecture-2.jpg'} alt='Services Architecture Image 2: render' width={419} height={428} className='object-cover' />}
                 title='Architecture'
                 text={
                     <div>
@@ -21,8 +21,8 @@ export default function ArchitecturePage() {
                 }
                 endImageLayout={
                     <div className='lg:max-w-[1170px] flex flex-col lg:flex-row justify-between'>
-                        <Image src={'/assets/images/services/architecture-3.jpg'} alt='' width={1374} height={700} className='lg:w-[47%] w-[85vw] md:h-[435px] h-96 object-contain' />
-                        <Image src={'/assets/images/services/architecture-4.jpg'} alt='' width={1419} height={635} className='lg:w-[47%] w-[85vw] md:h-[435px] h-96 object-contain' />
+                        <Image src={'/assets/images/services/architecture-3.jpg'} alt='Services Architecture Image 3: render' width={550} height={435} className='lg:w-[47%] w-[85vw] md:h-[435px] h-96 object-contain' />
+                        <Image src={'/assets/images/services/architecture-4.jpg'} alt='Services Architecture Image 4: render' width={550} height={435} className='lg:w-[47%] w-[85vw] md:h-[435px] h-96 object-contain' />
                     </div>
                 }
              />
