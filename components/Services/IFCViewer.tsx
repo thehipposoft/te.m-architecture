@@ -25,6 +25,9 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
             // Attempting to set up the camera and scene
             components.init();
             world.camera.controls.setLookAt(10, 10, 10, 0, 0, 0);
+
+            world.camera.controls.minPolarAngle = 0;               // don’t allow looking from below horizon
+            world.camera.controls.maxPolarAngle = Math.PI / 2;
             world.scene.setup();
             world.scene.three.background = new THREE.Color(0xf6f7f9);
             //const grids = components.get(OBC.Grids);
@@ -43,8 +46,15 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
             const workerUrl = '/worker.mjs';
             fragments.init(workerUrl);
 
-            world.camera.controls.addEventListener("rest", () =>
-                fragments.core.update(true),
+            world.camera.controls.addEventListener("rest", () => {
+
+                fragments.core.update();
+                //const pos = world.camera.controls.getPosition();
+                //const tgt = world.camera.controls.getTarget();
+
+                //console.log("Camera Position:", pos.x, pos.y, pos.z);
+                //console.log("Camera Target:", tgt.x, tgt.y, tgt.z);
+            }
             );
 
             fragments.list.onItemSet.add(({ value: model }) => {
@@ -62,8 +72,8 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
 
                     // Sync with OrbitControls
                     world.camera.controls.setLookAt(
-                        0, 20, 40,   // camera position
-                        0, 0, 0,     // target
+                        -21.16063501077916 , 12.629564009807284, 7.79552815004609,   // camera position
+                        0.5716570196899761, -0.08517360818950685, 3.3478066739090675,     // target
                         true         // smooth transition
                     );
                 }, 100);
@@ -83,8 +93,16 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
         initModelLoading();
     }, []);
 
+    const ifcOnDoubleClick = async () => {
+        // Placeholder for double-click interaction logic
+        console.log(">>IFC model double-clicked");
+    };
+
     return (
-        <div ref={containerRef} style={{ width: "100%", height: "600px" }} />
+        <div
+            ref={containerRef} style={{ width: "100%", height: "600px" }}
+            onDoubleClick={ifcOnDoubleClick}
+        />
      );
 }
 
