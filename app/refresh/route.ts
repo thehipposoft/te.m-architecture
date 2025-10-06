@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server"
 
 export async function GET() {
-  const token = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN
+  const token = process.env.INSTAGRAM_TOKEN
 
   if (!token) {
     return NextResponse.json(
-      { error: "Missing NEXT_PUBLIC_INSTAGRAM_TOKEN in environment" },
+      { error: "Missing INSTAGRAM_TOKEN in environment" },
       { status: 500 }
     )
   }

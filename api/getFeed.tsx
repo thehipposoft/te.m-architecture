@@ -1,5 +1,5 @@
 export default async function getFeed() {
-    const longLivedAccessToken = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+    const longLivedAccessToken = process.env.INSTAGRAM_TOKEN;
     const apiUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${longLivedAccessToken}`;
 
     const refreshAccessToken = async () => {
