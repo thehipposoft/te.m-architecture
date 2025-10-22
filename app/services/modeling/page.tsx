@@ -33,8 +33,9 @@ export default function ModelingPage() {
                     </div>
                 }
                 endImageLayout={
-                        <Image src={'/assets/images/services/modeling-4.jpg'} alt='' sizes='1170' width={1170} height={435} className='lg:w-[1170px] w-[85vw] md:h-[435px] h-96 object-contain' />
+                    <Image src={'/assets/images/services/modeling-4.jpg'} alt='' sizes='1170' width={1170} height={435} className='lg:w-[1170px] w-[85vw] md:h-[435px] h-96 object-contain' />
                 }
+                withViewer={true}
              />
         </div>
     );

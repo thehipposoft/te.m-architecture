@@ -58,7 +58,7 @@ const ProjectLayout = ({ project }:Props) => {
             </div>
         </div>
             <Image src={project.second_banner} alt='' width={2048} height={1152} className='md:w-screen object-cover w-[85vw] mx-auto md:h-[685px] h-[50vh] rounded-tr-3xl md:rounded-none md:rounded-tr-[200px]' />
-        <div className={`${project.nombre_abreviado === 'Vallista' ? 'md:flex-col flex-col-reverse': 'flex-col-reverse xl:flex-row'} flex gap-8 w-[85vw] lg:w-[1275px] my-28 mx-auto`}>
+        <div className={`flex-col-reverse xl:flex-row flex gap-8 w-[85vw] lg:w-[1275px] my-28 mx-auto`}>
             <div className={`${project.nombre_abreviado === 'Casa Patio' ? 'md:h-auto h-[30vh]' : ''} ${project.nombre_abreviado === 'Vallista' ? "h-[20vh] md:h-[400px] md:w-[1250px]" : ""} relative md:w-[613px] md:h-[1104px] h-[65vh] w-[85vw]`} >
                 <Image src={project.imagen_bim} alt='' fill className='object-contain' />
             </div>
