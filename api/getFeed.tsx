@@ -1,5 +1,9 @@
 export default async function getFeed() {
-    const response = await fetch(`https://wp.thehipposoft.com/wp-json/hippo/v1/token?website=temarqui`);
+    const response = await fetch(`https://wp.thehipposoft.com/wp-json/hippo/v1/token?website=temarqui`, {
+        headers: {
+            'x-api-key': process.env.WORDPRESS_API_SECRET!,
+        },
+    });
     const data = await response.json();
     const token = data.token;
 
