@@ -18,7 +18,7 @@ export async function generateMetadata({
     const previousImages = (await parent).openGraph?.images || [];
 
     return {
-      title: `Te. M Architecture | ${project.nombre} `,
+      title: `Te.M Architecture | ${project.nombre} `,
       openGraph: {
         images: [
           project.imagen_principal_banner,
@@ -30,7 +30,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: "Te. M Architecture | Specific Project",
+    title: "Te.M Architecture | Specific Project",
   };
 }
 

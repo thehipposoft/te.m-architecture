@@ -3,7 +3,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Te. M Architecture | Residential Gallery',
+  title: 'Te.M Architecture | Residential Gallery',
   description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
 }
 
@@ -36,11 +36,11 @@ const CASA_PATIO = [
       src: '/assets/images/projects/casa-patio/7.jpg',
       alt: 'Residencia Casa Patio 7',
   },
-  { 
+  {
       src: '/assets/images/projects/casa-patio/8.jpg',
       alt: 'Residencia Casa Patio 8',
   },
-  { 
+  {
       src: '/assets/images/projects/casa-patio/9.jpg',
       alt: 'Residencia Casa Patio 9',
   },

@@ -4,7 +4,7 @@ import React from 'react';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Te. M Architecture | 3D Visualization',
+  title: 'Te.M Architecture | 3D Visualization',
   description: 'Through high-quality 3D , animations, and virtual tours, we bring projects to life before construction begins. Our visualizations help clients and professionals better understand designs, materials, and spatial relationships, ensuring informed decisions at every stage.',
 }
 

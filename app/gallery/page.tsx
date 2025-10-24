@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import type { Metadata } from 'next'
- 
+
 export const metadata: Metadata = {
-  title: 'Te. M Architecture | Gallery',
+  title: 'Te.M Architecture | Gallery',
   description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
 }
 

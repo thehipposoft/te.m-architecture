@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
-  title: "Te.m Architecture",
-  description: "Te.m Architecture",
+  title: "Te.M Architecture",
+  description: "Te.M Architecture",
 };
 
 export default function RootLayout({

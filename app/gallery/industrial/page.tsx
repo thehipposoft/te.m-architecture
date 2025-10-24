@@ -3,7 +3,7 @@ import GalleryCard from '@/components/Services/GalleryCard'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Te. M Architecture | Industrial Gallery',
+  title: 'Te.M Architecture | Industrial Gallery',
   description: 'Every space has a purpose. We design with that in mind. Check our gallery.',
 }
 

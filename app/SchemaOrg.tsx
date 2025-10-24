@@ -18,7 +18,7 @@ const SchemaOrg = () => {
                         "logo": "https://temarqui.com/assets/images/logo.png",
                         "contactPoint": {
                             "@type": "ContactPoint",
-                            "telephone": "+39 342 326 5740",
+                            "telephone": "+61 436 346 474",
                             "contactType": "customer service",
                             "areaServed": "ES",
                             "availableLanguage": "es"

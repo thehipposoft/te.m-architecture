@@ -36,7 +36,7 @@ const MobileMenu = () => {
                         <Link href={'/#contact'} className='border-b sm:p-2 text-2xl' onMouseUp={toggleMenu}>
                             Contact
                         </Link>
-                        <Image src={'/assets/images/logo.png'} alt='te.m Logo' width={500} height={500} className='w-24 h-28'/>
+                        <Image src={'/assets/images/logo.png'} alt='Te.M Logo' width={500} height={500} className='w-24 h-28'/>
                     </div>
             </div>
         </div>
