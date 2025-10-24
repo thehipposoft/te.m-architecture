@@ -15,7 +15,17 @@ const ProjectLayout = ({ project }:Props) => {
             <ProjectsBannerSlider gallery={project.galeria} />
         </div>
         <div className='md:hidden block mx-auto mt-8'>
-            <GalleryCard gallery={project.galeria} title='Hotel Silu Wasi' titleColor='#FFFFFF' imageSrc='/assets/images/projects/silu-wasi/1-fw.webp' imageAlt='Hotel Silu Wasi' width='85vw' height='450px' expandColor='#333333' rounded  />
+            <GalleryCard
+                gallery={project.galeria}
+                title={project.nombre_abreviado}
+                titleColor='#FFFFFF'
+                imageSrc={project.imagen_principal_banner}
+                imageAlt={`${project.nombre_abreviado} - Banner`}
+                width='85vw'
+                height='450px'
+                expandColor='#333333'
+                rounded
+            />
         </div>
         <div className='flex justify-end my-20 '>
             <div className='border-solid border-[#DDDDDD] rounded-tl-2xl md:rounded-tl-[55px] pt-4 md:w-[80vw] w-[85vw] mx-auto md:mx-0'>
@@ -23,29 +33,29 @@ const ProjectLayout = ({ project }:Props) => {
                     <h3 className='uppercase w-48 md:w-96'>project name</h3>
                     <h1 className='uppercase light text-xl text-right md:texdt-left text-[#8d8d8d]'>{project.nombre}</h1>
                 </div>
-                <div className='flex items-center bottom-border py-3 px-8 md:pl-16'>
+                <div className='flex items-center bottom-border py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>typology</h3>
-                    <p className=''>{project.categoria}</p>
+                    <p className='text-right lg:text-left'>{project.categoria}</p>
                 </div>
-                <div className='flex items-center bottom-border py-3 px-8 md:pl-16'>
+                <div className='flex items-center bottom-border py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>location</h3>
-                    <p className=''>{project.ubicacion}</p>
+                    <p className='text-right lg:text-left'>{project.ubicacion}</p>
                 </div>
-                <div className='flex items-center bottom-border py-3 px-8 md:pl-16'>
+                <div className='flex items-center bottom-border py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>year</h3>
-                    <p className=''>{project.fecha}</p>
+                    <p className='text-right lg:text-left'>{project.fecha}</p>
                 </div>
-                <div className='flex items-center bottom-border py-3 px-8 md:pl-16'>
+                <div className='flex items-center bottom-border py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>status</h3>
-                    <p className=''>{project.estado}</p>
+                    <p className='text-right lg:text-left'>{project.estado}</p>
                 </div>
-                <div className='flex items-center bottom-border py-3 px-8 md:pl-16'>
+                <div className='flex items-center bottom-border py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>size</h3>
-                    <p className=''>{project.tamano}</p>
+                    <p className='text-right lg:text-left'>{project.tamano}</p>
                 </div>
-                <div className='flex items-center py-3 px-8 md:pl-16'>
+                <div className='flex items-center py-3 px-8 md:pl-16 justify-between lg:justify-normal'>
                     <h3 className='uppercase w-48 md:w-96'>design team</h3>
-                    <p className='uppercase'>{project.equipo}</p>
+                    <p className='uppercase text-right lg:text-left'>{project.equipo}</p>
                 </div>
             </div>
         </div>

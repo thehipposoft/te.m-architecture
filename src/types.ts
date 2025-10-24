@@ -19,6 +19,7 @@ export type ProyectosData = {
 export type Proyecto = {
     id: number,
     nombre: string,
+    tipo_proyecto?: string,
     imagen_principal_banner: string,
     categoria: string,
     ubicacion: string,
