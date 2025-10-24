@@ -72,8 +72,8 @@ function IFCViewer({ifcUrl}: {ifcUrl: string}) {
 
                     // Sync with OrbitControls
                     world.camera.controls.setLookAt(
-                        -21.16063501077916 , 12.629564009807284, 7.79552815004609,   // camera position
-                        0.5716570196899761, -0.08517360818950685, 3.3478066739090675,     // target
+                        -14.932953878543646 , 3.9172822989963167, 39.98790554193692,   // camera position
+                        -5.6126231611163115, 3.7992060582434033, 1.5608709226067827,     // target
                         true         // smooth transition
                     );
                 }, 100);

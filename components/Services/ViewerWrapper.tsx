@@ -3,7 +3,7 @@ import IFCViewer from "./IFCViewer";
 
 const ViewerWrapper = () => {
     return (
-        <IFCViewer ifcUrl='/models/casa-CyP.ifc' />
+        <IFCViewer ifcUrl='/models/hotel-payogastilla.ifc' />
     )
 }
 
