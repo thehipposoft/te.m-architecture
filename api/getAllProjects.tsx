@@ -25,7 +25,7 @@ export default async function getAllProjects() {
                     galeria: proyecto.acf.photo_gallery.galeria,
                 }
             )
-        }   
+        }
     ).reverse();
 
     if (!res.ok) {
