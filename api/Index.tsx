@@ -1,4 +1,4 @@
-export default async function getFeed() {
+export const getInstagramToken = async () => {
     const response = await fetch(`https://wp.thehipposoft.com/wp-json/hippo/v1/token?website=temarqui`, {
         headers: {
             'x-api-key': process.env.WORDPRESS_API_SECRET!,
@@ -7,9 +7,10 @@ export default async function getFeed() {
     const data = await response.json();
     const token = data.token;
 
-    console.log(">>> process.env.WORDPRESS_API_SECRET:", process.env.WORDPRESS_API_SECRET);
-    console.log(">>> Instagram Token:", token);
+    return token;
+};
 
+export const getInstagramFeed = async (token: string) => {
     const res = await fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink,media_type,thumbnail_url&limit=6&access_token=${token}`);
     const resJson = await res.json();
 
@@ -18,4 +19,4 @@ export default async function getFeed() {
     }
 
     return resJson.data;
-}
+};

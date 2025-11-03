@@ -1,8 +1,32 @@
+'use client';
+import { useEffect, useState } from 'react';
 import InstagramFeed from './InstagramFeed';
 import { FeedData } from '@/src/types';
 import Link from 'next/link';
+import { getInstagramFeed } from '@/api/Index';
 
-const SocialMedia = ({feedData}:FeedData) => {
+type Props = {
+    instagramToken: string,
+}
+
+const SocialMedia = ({
+    instagramToken,
+}: Props) => {
+    const [feedData, setFeedData] = useState<FeedData['feedData']>([]);
+
+    useEffect(() => {
+        const fetchInstagramFeed = async () => {
+            try {
+                const data = await getInstagramFeed(instagramToken);
+                setFeedData(data);
+            } catch (error) {
+                console.error('Error fetching Instagram feed:', error);
+            }
+        };
+
+        fetchInstagramFeed();
+    }, [instagramToken]);
+
     return (
         <div className='flex justify-center items-center md:items-start overflow-hidden lg:h-[120vh] relative w-[85vw] md:w-auto md:mx-0 mx-auto pb-12 py-12 lg:pt-0' id='projects'>
             <div className=' bg-[#c4c4c4] opacity-20 lg:w-[75vw] md:h-[160vh] rounded-t-full -top-32 absolute left-0'/>
