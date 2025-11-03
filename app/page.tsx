@@ -9,19 +9,17 @@ import SocialMedia from "@/components/SocialMedia";
 import { Post, Proyecto } from "@/src/types";
 
 export default async function Home() {
-  const instagramFeed: Post[] = await getFeed();
-  const projectsData: Proyecto[] = await getAllProjects();
+    const instagramFeed: Post[] = await getFeed();
+    const projectsData: Proyecto[] = await getAllProjects();
 
-  return (
-    <div className="">
-      <main className="">
-        <Hero proyectosData={projectsData} />
-        <Services />
-        <ProjectsSort />
-        <About />
-        <Contact />
-        <SocialMedia feedData={instagramFeed} />
-      </main>
-    </div>
-  );
+    return (
+        <main className="">
+            <Hero proyectosData={projectsData} />
+            <Services />
+            <ProjectsSort />
+            <About />
+            <Contact />
+            <SocialMedia feedData={instagramFeed} />
+        </main>
+    );
 }
